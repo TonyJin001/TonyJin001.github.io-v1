@@ -28,7 +28,7 @@ $(document).ready(function(){
   for (var i=0;i<navMenus.length;i++) {
     navMenus[i].innerHTML =
         '<div class="navbar-header">'+
-          '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav">'+
+          '<button type="button" class="navbar-toggle mobile-opaque" data-toggle="collapse" data-target="#collapsible-nav">'+
             '<span class="sr-only">切换导航</span>'+
             '<span class="icon-bar"></span>'+
             '<span class="icon-bar"></span>'+
@@ -44,6 +44,11 @@ $(document).ready(function(){
           '</ul>'+
         '</div>';
   }
+
+  $('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+  });
 
 
 

@@ -9,12 +9,6 @@ hr {
 
 }
 
-.navbar-default {
-  background-color: transparent;
-  padding: 30px 60px 40px 60px;
-  border: none;
-}
-
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
   color: black;
 }
@@ -24,11 +18,75 @@ hr {
   font-weight: bold;
 }
 
+/*Centered column*/
 .col-centered{
-float: none;
-margin: 0 auto;
+  float: none;
+  margin: 0 auto;
 }
 
+/*Side bar for navigation in portfolio pieces*/
+.bs-docs-sidebar {
+  padding-left: 20px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+/* all links in sidebar*/
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+/* nested links in sidebar*/
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+/* add transparent border to all links in sidebar*/
+.bs-docs-sidebar .nav>li>a {
+    border-left: 2px solid transparent;
+}
+/* active & hover links in sidebar*/
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 2px solid #563d7c;
+}
+/* change font weight for all active links in sidebar*/
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* change font weight for nested active links in sidebar*/
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 30px 40px 40px 40px;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+/* Mobile Styles*/
+  .navbar-default {
+    background-color: white;
+    padding: 10px 5px 10px 5px;
+    border: none;
+  }
+}
 
 #about-photo {
   padding: 40px 0px 40px 0px;
@@ -37,4 +95,8 @@ margin: 0 auto;
 #about-name {
   font-family: 'Zilla Slab', serif;
   padding: 150px 20px 20px 20px;
+}
+
+#template-content {
+  padding: 20px;
 }
