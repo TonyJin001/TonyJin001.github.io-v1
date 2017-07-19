@@ -1,4 +1,7 @@
 
+body {
+  margin-top: 120px;
+}
 
 hr {
   color: black;
@@ -27,14 +30,14 @@ hr {
 /*Side bar for navigation in portfolio pieces*/
 .bs-docs-sidebar {
   padding-left: 20px;
-  margin-top: 200px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 /* all links in sidebar*/
 .bs-docs-sidebar .nav>li>a {
     color: #999;
     padding: 4px 20px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
 }
 /* nested links in sidebar*/
@@ -42,7 +45,7 @@ hr {
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 30px;
-    font-size: 12px;
+    font-size: 14px;
 }
 /* add transparent border to all links in sidebar*/
 .bs-docs-sidebar .nav>li>a {
@@ -70,6 +73,12 @@ hr {
     font-weight: 500;
 }
 
+/*to make sidebar scrollable*/
+.bs-docs-sidebar > ul {
+    overflow-y: auto;
+    height: 100%;
+}
+
 
 @media only screen and (min-width: 768px) {
   .navbar-default {
@@ -94,9 +103,30 @@ hr {
 
 #about-name {
   font-family: 'Zilla Slab', serif;
-  padding: 150px 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 #template-content {
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
+}
+
+#template-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  padding: 10px 13px 10px 13px;
+  border-radius: 50%;
+  color: black;
+  background-color: rgba(255,255,255,0.5);
+
+
+}
+
+#sidebar {
+  position:fixed;
+  width:220px;
+}
+
+.portfolio-row {
+  padding: 0px 40px 20px 40px;
 }

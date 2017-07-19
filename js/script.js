@@ -51,5 +51,38 @@ $(document).ready(function(){
   });
 
 
+  $('#template-to-top').hide();
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#template-to-top').fadeIn();
+    } else {
+      $('#template-to-top').fadeOut();
+    }
+  });
+
+  $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top-50
+	    }, 700, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+  //Click event to scroll to top
+    $('#template-to-top').click(function () {
+      $('html, body').animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+
+
+
+
+
 
 });
