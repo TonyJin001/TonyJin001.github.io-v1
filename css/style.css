@@ -1,15 +1,11 @@
 
-body {
-  margin-top: 120px;
-}
-
 hr {
   color: black;
   height: 2px;
 }
 
 .navbar-brand {
-
+  color: black !important;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -27,7 +23,7 @@ hr {
   margin: 0 auto;
 }
 
-/*Side bar for navigation in portfolio pieces*/
+/**********************Side bar for navigation in portfolio pieces*******************8*/
 .bs-docs-sidebar {
   padding-left: 20px;
   margin-top: 50px;
@@ -55,10 +51,10 @@ hr {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-    color: #563d7c;
+    color: #2D82C8;
     text-decoration: none;
     background-color: transparent;
-    border-left: 2px solid #563d7c;
+    border-left: 2px solid #2D82C8;
 }
 /* change font weight for all active links in sidebar*/
 .bs-docs-sidebar .nav>.active>a,
@@ -72,19 +68,26 @@ hr {
 .bs-docs-sidebar .nav .nav>.active:focus>a {
     font-weight: 500;
 }
-
 /*to make sidebar scrollable*/
 .bs-docs-sidebar > ul {
     overflow-y: auto;
     height: 100%;
 }
 
-
+/******************** different screen sizes **************************/
 @media only screen and (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
     padding: 30px 40px 40px 40px;
     border: none;
+  }
+
+  .portfolio-row {
+    padding: 0px 50px 20px 50px;
+  }
+
+  body {
+    margin-top: 170px;
   }
 }
 
@@ -95,8 +98,99 @@ hr {
     padding: 10px 5px 10px 5px;
     border: none;
   }
+
+  .portfolio-row {
+    padding: 0px 10px 20px 10px;
+  }
+
+  body {
+    margin-top: 70px;
+  }
 }
 
+/************PORTFOLIO.HTML***************/
+
+
+.thumbnail {
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  overflow: hidden;
+
+}
+
+.portfolio-row div a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.portfolio-row div a h4 {
+  color: gray;
+  padding-bottom: 20px;
+}
+
+.portfolio-row div a h4:hover {
+  color: black;
+  padding-bottom: 20px;
+}
+
+.thumbnail:hover+h4 {
+  color: black;
+  padding-bottom: 20px;
+}
+
+/*a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+
+}*/
+
+.thumbnail img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.thumbnail:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+  opacity: 0.4;
+}
+
+.thumbnail .captions {
+  position: absolute;
+  height: 78%;
+  width: 91%;
+  top: 28%;
+  left:15px;
+  text-align: left;
+  color: black;
+  opacity: 0;
+}
+
+.thumbnail:hover .captions {
+  position: absolute;
+  height: 78%;
+  width: 91%;
+  top: 28%;
+  left:15px;
+  text-align: left;
+  color: black;
+  opacity: 1;
+}
+
+.captions h3 {
+  text-align: center;
+}
+
+
+/***********Template.HTML*****************/
+
+.subgroup p {
+  font-size: 1em;
+}
+
+/*******************IDs*******************/
 #about-photo {
   padding: 40px 0px 40px 0px;
 }
@@ -125,8 +219,4 @@ hr {
 #sidebar {
   position:fixed;
   width:220px;
-}
-
-.portfolio-row {
-  padding: 0px 40px 20px 40px;
 }

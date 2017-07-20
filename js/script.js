@@ -34,7 +34,7 @@ $(document).ready(function(){
             '<span class="icon-bar"></span>'+
             '<span class="icon-bar"></span>'+
           '</button>'+
-          '<a class="navbar-brand" href="#">Yanfeng Jin (Tony)</a>'+
+          '<a class="navbar-brand" href="Portfolio.html">Yanfeng Jin (Tony)</a>'+
         '</div>'+
         '<div class="collapse navbar-collapse navbar-right" id="collapsible-nav">'+
           '<ul class="nav navbar-nav">'+
@@ -79,6 +79,19 @@ $(document).ready(function(){
       $('html, body').animate({ scrollTop: 0 }, 600);
       return false;
     });
+
+
+
+    // let captions = document.getElementsByClassName('captions');
+    // let imgHeight = document.getElementById('portfolio-image').style.height;
+    // console.log(imgHeight);
+    // let imgWidth = document.getElementById('portfolio-image').style.width;
+    // for (var i=0;i<captions.length;i++) {
+    //   console.log("Height: "+imgHeight);
+    //   console.log("Width: "+imgWidth);
+    //   captions[i].height = imgHeight;
+    //   captions[i].width = imgWidth;
+    // }
 
 
 
