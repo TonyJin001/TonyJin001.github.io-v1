@@ -159,7 +159,7 @@ hr {
     font-size: 1.6em;
     margin-bottom: 20px;
   }
-  /*******************Button Underline From Left ************************/
+  /*****Button Underline From Left *******/
   .hvr-underline-from-left {
     display: inline-block;
     vertical-align: middle;
@@ -203,6 +203,12 @@ hr {
     border-bottom: 1px solid rgba(0,0,0,0.1);
   }
 
+  .navbar-brand {
+    color: black !important;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
   .portfolio-row {
     padding: 0px 10px 20px 10px;
   }
@@ -222,7 +228,7 @@ hr {
     padding: 0px 20px 20px 20px;
   }
 
-  /***********Template.HTML*****************/
+  /******Template.HTML******/
 
   .group h3 {
     font-family: 'Lato', sans-serif;
@@ -250,7 +256,7 @@ hr {
 
 
 
-/************PORTFOLIO.HTML***************/
+/*************************PORTFOLIO.HTML****************************/
 
 
 .thumbnail {
