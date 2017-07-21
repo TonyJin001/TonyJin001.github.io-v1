@@ -101,6 +101,7 @@ hr {
     text-align: center;
     font-size: 1.5vw;
   }
+
 }
 
 /*Larger than medium but smaller than largest screen*/
@@ -136,6 +137,28 @@ hr {
     padding: 0px 20px 20px 60px;
   }
 
+  .subgroup p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.35em;
+    line-height: 32px;
+    margin-bottom: 50px;
+  }
+
+  /***********Template.HTML*****************/
+
+  .group h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+
+  .subgroup h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }
   /*******************Button Underline From Left ************************/
   .hvr-underline-from-left {
     display: inline-block;
@@ -196,7 +219,30 @@ hr {
   }
 
   #template-content {
-    padding: 0px 20px 20px 60px;
+    padding: 0px 20px 20px 20px;
+  }
+
+  /***********Template.HTML*****************/
+
+  .group h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .subgroup h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  .subgroup p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.15em;
+    line-height: 25px;
+    margin-bottom: 50px;
   }
 }
 
@@ -278,28 +324,7 @@ hr {
 }
 
 
-/***********Template.HTML*****************/
 
-.group h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 2.2em;
-  margin-bottom: 20px;
-}
-
-.subgroup h4 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 1.6em;
-  margin-bottom: 20px;
-}
-
-.subgroup p {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 1.35em;
-  line-height: 32px;
-  margin-bottom: 50px;
-}
 
 /*******************IDs*******************/
 #about-photo {
