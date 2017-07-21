@@ -19,12 +19,30 @@
 
     <!-- Stylesheet -->
     <link rel = "stylesheet" type = "text/css" href = "../css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Source+Serif+Pro:400,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
     <script src="../js/script.js" charset="utf-8"></script>
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top nav-menu-class" role="navigation"></nav>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../Portfolio.html">Yanfeng Jin (Tony)</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+        <ul class="nav navbar-nav">
+          <li><a class="selected hvr-underline-from-left" href="Portfolio.html">Portfolio</a></li>
+          <li><a class="hvr-underline-from-left" href="#">Resume</a></li>
+          <li><a class="hvr-underline-from-left" href="About.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="container-fluid">
       <div class="row portfolio-row">
         <div class="col-xs-12 col-sm-6 col-md-4">
