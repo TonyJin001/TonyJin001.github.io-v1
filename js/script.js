@@ -47,6 +47,8 @@ $(document).ready(function(){
     //   captions[i].width = imgWidth;
     // }
 
+    $('.fade-in').addClass('load');
+
 
 
 
