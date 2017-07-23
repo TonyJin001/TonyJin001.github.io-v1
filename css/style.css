@@ -53,7 +53,7 @@ hr {
 }
 /* all links in sidebar*/
 .bs-docs-sidebar .nav>li>a {
-    color: #999;
+    color: #74828F;
     padding: 4px 20px;
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
@@ -74,23 +74,23 @@ hr {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-    color: #74828F;
+    color: #525564;
     text-decoration: none;
     font-weight: 400;
     background-color: transparent;
-    border-left: 1px solid #74828F;
+    border-left: 1px solid #525564;
 }
 /* change font weight for all active links in sidebar*/
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>.active:hover>a,
 .bs-docs-sidebar .nav>.active:focus>a {
-    font-weight: 900;
+    font-weight: 700;
 }
 /* change font weight for nested active links in sidebar*/
 .bs-docs-sidebar .nav .nav>.active>a,
 .bs-docs-sidebar .nav .nav>.active:hover>a,
 .bs-docs-sidebar .nav .nav>.active:focus>a {
-    font-weight: 700;
+    font-weight: 400;
 }
 /*to make sidebar scrollable*/
 .bs-docs-sidebar > ul {
@@ -115,6 +115,7 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     text-align: center;
+    color: #525564;
     font-size: 1.5vw;
   }
 
@@ -136,6 +137,7 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     text-align: center;
+    color: #525564;
     font-size: 2vw;
   }
 }
@@ -157,6 +159,7 @@ hr {
   .subgroup p {
     font-family: 'Source Serif Pro', serif;
     font-size: 1.35em;
+    color:  #525564;
     line-height: 32px;
     margin-bottom: 50px;
   }
@@ -167,6 +170,7 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 2.2em;
+    color:  #525564;
     margin-bottom: 20px;
   }
 
@@ -174,6 +178,7 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 1.6em;
+    color:  #525564;
     margin-bottom: 20px;
   }
   /*****Button Underline From Left *******/
@@ -238,6 +243,7 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     text-align: center;
+    color: #525564;
     font-size: 3.5vw;
   }
 
@@ -293,18 +299,18 @@ hr {
 .portfolio-row div a h4 {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
-  color: black;
+  color: #74828F;
   padding-bottom: 20px;
 }
 
 .portfolio-row div a h4:hover {
-  color: black;
+  color: #74828F;
   font-weight: bold;
   padding-bottom: 20px;
 }
 
 .thumbnail:hover+h4 {
-  color: black;
+  color: #74828F;
   font-weight: bold;
   padding-bottom: 20px;
 }
@@ -312,6 +318,10 @@ hr {
 /*a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 
 }*/
+
+.thumbnail {
+  background: #FEF6EB;
+}
 
 .thumbnail img {
 	-webkit-transform: scale(1);
@@ -323,7 +333,7 @@ hr {
 .thumbnail:hover img {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .thumbnail .captions {
@@ -347,7 +357,6 @@ hr {
   color: black;
   opacity: 1;
 }
-
 
 
 
