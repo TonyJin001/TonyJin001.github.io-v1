@@ -6,11 +6,11 @@ hr {
 
 .fade-in {
     opacity: 0;
-    -webkit-transition: opacity 1.5s ease-in;
-       -moz-transition: opacity 1.5s ease-in;
-        -ms-transition: opacity 1.5s ease-in;
-         -o-transition: opacity 1.5s ease-in;
-            transition: opacity 1.5s ease-in;
+    -webkit-transition: opacity 1s ease-in;
+       -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+         -o-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
 }
 
 .fade-in.load {
@@ -24,17 +24,17 @@ hr {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #74828F;
+  color: #525564;
   padding: 0px 0px 10px 0px;
   margin: 15px 15px 0px 15px;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #525564;
+  color: black;
 }
 
 .selected {
-  color: #525564 !important;
+  /*color: #89bdd3 !important;*/
   font-weight: bold !important;
 }
 
@@ -43,6 +43,25 @@ hr {
   float: none;
   margin: 0 auto;
 }
+
+.jumbotron {
+  background-color: white;
+  /*background: url('../assets/6.JPG') no-repeat center center;
+  opacity: 0.3;
+  background-size: cover;*/
+  position: relative;
+  height: 450px;
+  color: #525564;
+  /*color: white;*/
+  overflow: hidden;
+  padding-top: 150px;
+  padding-left: 20%;
+  /*padding-right: 20%;*/
+  margin-bottom: 100px;
+}
+
+
+
 
 
 /**********************Side bar for navigation in portfolio pieces*******************8*/
@@ -53,7 +72,7 @@ hr {
 }
 /* all links in sidebar*/
 .bs-docs-sidebar .nav>li>a {
-    color: #74828F;
+    color: #999;
     padding: 4px 20px;
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
@@ -74,11 +93,11 @@ hr {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-    color: #525564;
+    color: #02558b;
     text-decoration: none;
     font-weight: 400;
     background-color: transparent;
-    border-left: 1px solid #525564;
+    border-left: 1px solid #02558b;
 }
 /* change font weight for all active links in sidebar*/
 .bs-docs-sidebar .nav>.active>a,
@@ -102,6 +121,10 @@ hr {
 /*Largest screen*/
 @media only screen and (min-width: 991px) {
 
+  body {
+    margin-top: 110px;
+  }
+
   .navbar-default {
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
@@ -115,14 +138,45 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     text-align: center;
-    color: #525564;
+    color: black;
     font-size: 1.5vw;
+  }
+
+  .jumbotron h1 {
+    font-family: 'Lato', sans-serif;
+    /*position: absolute;*/
+    opacity: 1;
+    /*line-height: 40px;*/
+  }
+
+  .jumbotron p {
+    font-family: 'Lato', sans-serif;
+    /*position: relative;*/
+    opacity: 1;
+    padding-left: 20px;
+    /*line-height: 40px;*/
+  }
+
+  #jumbo-bg {
+      position: absolute;
+      left: 0;
+      top: -30%;
+      width: 100%;
+      height: auto;
+      opacity: 0.2;
+      overflow: hidden;
   }
 
 }
 
 /*Larger than medium but smaller than largest screen*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  body {
+    margin-top: 70px;
+  }
+
+
   .navbar-default {
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
@@ -137,8 +191,27 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     text-align: center;
-    color: #525564;
+    color: black;
     font-size: 2vw;
+  }
+
+  .jumbotron h1 {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    line-height: 40px;
+    opacity: 1;
+    top: 40%;
+    left: 5%;
+  }
+
+  #jumbo-bg {
+      position: absolute;
+      left: 0;
+      top: -15%;
+      width: 100%;
+      height: auto;
+      opacity: 0.2;
+      overflow: hidden;
   }
 }
 
@@ -148,9 +221,7 @@ hr {
     padding: 0px 50px 20px 50px;
   }
 
-  body {
-    margin-top: 170px;
-  }
+
 
   #template-content {
     padding: 0px 20px 20px 60px;
@@ -158,7 +229,7 @@ hr {
 
   .subgroup p {
     font-family: 'Source Serif Pro', serif;
-    font-size: 1.35em;
+    font-size: 1.2em;
     color:  #525564;
     line-height: 32px;
     margin-bottom: 50px;
@@ -170,7 +241,7 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 2.2em;
-    color:  #525564;
+    color: #525564;
     margin-bottom: 20px;
   }
 
@@ -198,7 +269,7 @@ hr {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #525564;
+    background: black;
     height: 1px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -243,8 +314,17 @@ hr {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     text-align: center;
-    color: #525564;
+    color: black;
     font-size: 3.5vw;
+  }
+
+  .jumbotron h1 {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    line-height: 40px;
+    opacity: 1;
+    top: 30%;
+    left: 5%;
   }
 
   #template-content {
@@ -258,6 +338,7 @@ hr {
     font-weight: 900;
     font-size: 1.8em;
     margin-bottom: 20px;
+    color: #525564;
   }
 
   .subgroup h4 {
@@ -265,6 +346,7 @@ hr {
     font-weight: 700;
     font-size: 1.3em;
     margin-bottom: 20px;
+    color: #525564;
   }
 
   .subgroup p {
@@ -272,6 +354,17 @@ hr {
     font-size: 1.15em;
     line-height: 25px;
     margin-bottom: 50px;
+    color: #525564;
+  }
+
+  #jumbo-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: auto;
+      height: 110%;
+      opacity: 0.2;
+      overflow: hidden;
   }
 }
 
@@ -320,7 +413,7 @@ hr {
 }*/
 
 .thumbnail {
-  background: #FEF6EB;
+  /*background: #96C0CE;*/
 }
 
 .thumbnail img {
@@ -333,7 +426,7 @@ hr {
 .thumbnail:hover img {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .thumbnail .captions {
@@ -343,7 +436,7 @@ hr {
   top: 28%;
   left:15px;
   text-align: left;
-  color: black;
+  /*color: black;*/
   opacity: 0;
 }
 
@@ -354,10 +447,20 @@ hr {
   top: 30%;
   left:16px;
   text-align: left;
-  color: black;
+  /*color: black;*/
   opacity: 1;
 }
 
+/*******************************About.html********************************/
+
+.no-top-margin {
+  margin-top: 0px;
+}
+
+#about-content h1 {
+  color:#525564;
+  font-family: 'Lato', sans-serif;
+}
 
 
 /*******************IDs*******************/
@@ -368,6 +471,10 @@ hr {
 #about-name {
   font-family: 'Lato', sans-serif;
   padding: 0px 20px 20px 20px;
+}
+
+#about-content {
+  margin-top: 70px;
 }
 
 #template-to-top {

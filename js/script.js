@@ -34,6 +34,19 @@ $(document).ready(function(){
       return false;
     });
 
+    $('.fade-in').addClass('load');
+
+    $("a").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $(".fade-in").fadeOut(500, redirectPage);       
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+
+
 
 
     // let captions = document.getElementsByClassName('captions');
@@ -47,7 +60,7 @@ $(document).ready(function(){
     //   captions[i].width = imgWidth;
     // }
 
-    $('.fade-in').addClass('load');
+
 
 
 
