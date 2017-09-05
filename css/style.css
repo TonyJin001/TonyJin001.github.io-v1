@@ -457,11 +457,38 @@ hr {
   margin-top: 0px;
 }
 
-#about-content h1 {
-  color:#525564;
-  font-family: 'Lato', sans-serif;
+.content-box {
+  border-left: 1px solid black;
+  padding-left: 28px;
+  padding-right: 20px;
 }
 
+.content-box h2 {
+  margin-top: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.6em;
+  font-weight: 400;
+}
+
+.content-box h5 {
+  margin-top: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.quote {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+.content-box p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+}
 
 /*******************IDs*******************/
 #about-photo {

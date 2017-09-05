@@ -36,16 +36,6 @@ $(document).ready(function(){
 
     $('.fade-in').addClass('load');
 
-    $("a").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $(".fade-in").fadeOut(500, redirectPage);       
-    });
-
-    function redirectPage() {
-        window.location = linkLocation;
-    }
-
 
 
 
