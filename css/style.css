@@ -50,11 +50,11 @@ hr {
   opacity: 0.3;
   background-size: cover;*/
   position: relative;
-  height: 450px;
+  height: 340px;
   color: #525564;
   /*color: white;*/
   overflow: hidden;
-  padding-top: 150px;
+  padding-top: 120px;
   padding-left: 20%;
   /*padding-right: 20%;*/
   margin-bottom: 100px;
@@ -221,6 +221,9 @@ hr {
     padding: 0px 50px 20px 50px;
   }
 
+  .footer-row {
+    padding: 40px 50px 10px 50px;
+  }
 
 
   #template-content {
@@ -282,6 +285,18 @@ hr {
     right: 0;
   }
 
+  .footer p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: right;
+  }
+
+  .footer-icons i {
+    float: left;
+    padding-left: 12px;
+    padding-top: 3px;
+  }
+
 }
 
 /*Mobile screen*/
@@ -304,6 +319,10 @@ hr {
 
   .portfolio-row {
     padding: 0px 10px 20px 10px;
+  }
+
+  .footer-row {
+    padding: 30px 10px 10px 10px;
   }
 
   body {
@@ -366,6 +385,21 @@ hr {
       opacity: 0.2;
       overflow: hidden;
   }
+
+  .footer p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .footer-icons {
+    position: relative;
+    left: 35%;
+  }
+
+  .footer-icons i {
+    padding: 3px 12px 0px 12px;
+  }
 }
 
 
@@ -381,7 +415,7 @@ hr {
   margin-bottom: 10px;
   padding: 0px;
   overflow: hidden;
-
+  min-height: 230px;
 }
 
 .portfolio-row div a {
@@ -391,20 +425,20 @@ hr {
 
 .portfolio-row div a h4 {
   font-family: 'Lato', sans-serif;
-  font-weight: normal;
-  color: #74828F;
+  font-weight: 300;
+  color: black;
   padding-bottom: 20px;
 }
 
 .portfolio-row div a h4:hover {
-  color: #74828F;
-  font-weight: bold;
+  color: black;
+  font-weight: 400;
   padding-bottom: 20px;
 }
 
 .thumbnail:hover+h4 {
-  color: #74828F;
-  font-weight: bold;
+  color: black;
+  font-weight: 400;
   padding-bottom: 20px;
 }
 
@@ -413,7 +447,7 @@ hr {
 }*/
 
 .thumbnail {
-  /*background: #96C0CE;*/
+  background: white;
 }
 
 .thumbnail img {
@@ -422,11 +456,12 @@ hr {
   opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+  max-height: 230px;
 }
 .thumbnail:hover img {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .thumbnail .captions {
@@ -458,19 +493,19 @@ hr {
 }
 
 .content-box {
-  border-left: 1px solid black;
+  border-left: 1px solid #979797;
   padding-left: 28px;
   padding-right: 20px;
 }
 
-.content-box h2 {
+h2 {
   margin-top: 0px;
   font-family: 'Lato', sans-serif;
   font-size: 2.6em;
   font-weight: 400;
 }
 
-.content-box h5 {
+h5 {
   margin-top: 0px;
   font-family: 'Lato', sans-serif;
   font-size: 1.3em;
