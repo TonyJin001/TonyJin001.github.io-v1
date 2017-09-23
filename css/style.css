@@ -45,22 +45,31 @@ hr {
 }
 
 .jumbotron {
-  background-color: white;
-  /*background: url('../assets/6.JPG') no-repeat center center;
-  opacity: 0.3;
-  background-size: cover;*/
-  position: relative;
-  height: 340px;
-  color: #525564;
-  /*color: white;*/
+
+  height: 600px;
+  color: black;
+
+  background: #37A9DF; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #37A9DF , #CAE4DB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #37A9DF , #CAE4DB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #37A9DF , #CAE4DB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #37A9DF , #CAE4DB); /* Standard syntax */
+
   overflow: hidden;
-  padding-top: 120px;
+  margin-top: -120px;
+  padding-top: 250px;
   padding-left: 20%;
-  /*padding-right: 20%;*/
   margin-bottom: 100px;
 }
 
+.footer-row i {
+  color: black;
+}
 
+.footer-row i:hover {
+  color: black;
+  opacity: 0.5;
+}
 
 
 
@@ -93,11 +102,11 @@ hr {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-    color: #02558b;
+    color: black;
     text-decoration: none;
     font-weight: 400;
     background-color: transparent;
-    border-left: 1px solid #02558b;
+    border-left: 1px solid black;
 }
 /* change font weight for all active links in sidebar*/
 .bs-docs-sidebar .nav>.active>a,
@@ -157,7 +166,7 @@ hr {
     /*line-height: 40px;*/
   }
 
-  #jumbo-bg {
+  /*#jumbo-bg {
       position: absolute;
       left: 0;
       top: -30%;
@@ -165,7 +174,7 @@ hr {
       height: auto;
       opacity: 0.2;
       overflow: hidden;
-  }
+  }*/
 
 }
 
@@ -203,7 +212,7 @@ hr {
     top: 40%;
     left: 5%;
   }
-
+/*
   #jumbo-bg {
       position: absolute;
       left: 0;
@@ -212,7 +221,7 @@ hr {
       height: auto;
       opacity: 0.2;
       overflow: hidden;
-  }
+  }*/
 }
 
 /*Everything larger than medium*/
@@ -222,7 +231,12 @@ hr {
   }
 
   .footer-row {
-    padding: 40px 50px 10px 50px;
+    padding: 30px 50px 15px 50px;
+    background: #a4e1e9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #a4e1e9 , #cae4db); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #a4e1e9 , #cae4db); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #a4e1e9 , #cae4db); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #a4e1e9 , #cae4db); /* Standard syntax */
   }
 
 
@@ -323,6 +337,7 @@ hr {
 
   .footer-row {
     padding: 30px 10px 10px 10px;
+    background-color: #21CE99;
   }
 
   body {
@@ -376,7 +391,7 @@ hr {
     color: #525564;
   }
 
-  #jumbo-bg {
+  /*#jumbo-bg {
       position: absolute;
       left: 0;
       top: 0;
@@ -384,7 +399,8 @@ hr {
       height: 110%;
       opacity: 0.2;
       overflow: hidden;
-  }
+  }*/
+
 
   .footer p {
     font-family: 'Lato', sans-serif;
