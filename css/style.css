@@ -41,6 +41,10 @@ hr {
   margin: 0 auto;
 }
 
+.small-margin-bottom {
+  margin-bottom: 10px !important;
+}
+
 .footer-row i {
   color: black;
 }
@@ -56,6 +60,26 @@ hr {
   font-size: 2em;
   padding-top: 20px;
   padding-bottom: 5px;
+}
+
+.section-divider {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.dot1, .dot2 {
+  margin-right: 30px;
+}
+
+.dot1, .dot2, .dot3 {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 30%;
+  -moz-border-radius: 30%;
+  -webkit-border-radius: 30%;
+  background-color: black;
 }
 
 .group .row {
@@ -265,6 +289,7 @@ hr {
 
   .jumbotron {
     background: url('../assets/index-bg-longer.JPG') no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
     /*position: relative;*/
     height: 650px;
@@ -445,7 +470,21 @@ hr {
     padding: 0px 20px 20px 60px;
   }
 
+  .subgroup h5 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
   .subgroup p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.25em;
+    line-height: 32px;
+    margin-bottom: 50px;
+  }
+
+  .subgroup ul {
     font-family: 'Source Serif Pro', serif;
     font-size: 1.25em;
     line-height: 32px;
@@ -621,7 +660,21 @@ hr {
     font-size: 1.2em;
   }
 
+  .subgroup h5 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
   .subgroup p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.15em;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+
+  .subgroup ul {
     font-family: 'Source Serif Pro', serif;
     font-size: 1.15em;
     line-height: 25px;
