@@ -294,7 +294,7 @@ hr {
   }
 
   .jumbotron {
-    background: url('../assets/index-bg-longer.JPG') no-repeat center center;
+    background: url('../assets/index-bg-longer.jpg') no-repeat center center;
     background-size: cover;
     /*position: relative;*/
     height: 650px;
@@ -381,7 +381,7 @@ hr {
   }
 
   .jumbotron {
-    background: url('../assets/index-bg-longer.JPG') no-repeat center center;
+    background: url('../assets/index-bg-longer.jpg') no-repeat center center;
     background-size: cover;
     /*position: relative;*/
     height: 600px;
