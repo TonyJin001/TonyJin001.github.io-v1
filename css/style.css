@@ -101,6 +101,10 @@ hr {
   height: 100%;
 }
 
+.img-no-left-right-padding {
+  padding: 10px 0px 10px 0px;
+}
+
 /**********************Side bar for navigation in portfolio pieces*******************8*/
 .bs-docs-sidebar {
   padding-left: 20px;
