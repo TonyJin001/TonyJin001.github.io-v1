@@ -22,7 +22,9 @@ hr {
     opacity: 1;
 }
 
-
+#about-content p normal {
+  font-weight: 400;
+}
 
 .selected {
   /*color: #89bdd3 !important;*/
@@ -293,7 +295,6 @@ hr {
 
   .jumbotron {
     background: url('../assets/index-bg-longer.JPG') no-repeat center center;
-    background-attachment: fixed;
     background-size: cover;
     /*position: relative;*/
     height: 650px;
@@ -813,6 +814,13 @@ hr {
 
 .content-box {
   border-left: 1px solid #979797;
+  margin-left: -28px;
+  padding-left: 28px;
+  padding-right: 20px;
+}
+
+.content-box-side {
+  border-left: 1px solid #979797;
   padding-left: 28px;
   padding-right: 20px;
 }
@@ -842,6 +850,18 @@ h5 {
   font-family: 'Lato', sans-serif;
   font-size: 1.2em;
   font-weight: 300;
+}
+
+.content-box-side p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.content-box-side .about-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 /*******************IDs*******************/

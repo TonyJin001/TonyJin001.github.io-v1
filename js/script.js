@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $(window).scroll(function(){
+    $(".scroll-disappear").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+
   $('body').scrollspy({
     target: '.bs-docs-sidebar',
     offset: 40
