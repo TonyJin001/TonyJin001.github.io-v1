@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Carolina Mountains";
+  src: url("../assets/fonts/carolina_mountains_personal_use-webfont.eot");
+  src:
+  url("../assets/fonts/carolina_mountains_personal_use-webfont.woff") format("woff"),
+  /*url("./fonts/Harabara.otf") format("opentype"),*/
+  url("../assets/fonts/carolina_mountains_personal_use-webfont.svg") format("svg");
+}
 
 hr {
   color: black;
@@ -7,6 +15,12 @@ hr {
   width: 40px;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 .fade-in {
@@ -251,6 +265,7 @@ hr {
     color: black !important;
     font-weight: 300;
     font-size: 1.5em;
+    font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
   }
 
   .navbar-default .navbar-nav>li>a {
@@ -269,6 +284,7 @@ hr {
     color: white !important;
     font-weight: 300;
     font-size: 1.5em;
+    font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
   }
 
   .navbar-default .navbar-nav-white>li>a {
@@ -357,6 +373,7 @@ hr {
     color: black !important;
     font-weight: 400;
     font-size: 1.5em;
+    font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
   }
 
   .navbar-default .navbar-nav>li>a {
@@ -471,7 +488,7 @@ hr {
   }
 
 
-  #template-content {
+  .main-content {
     padding: 0px 20px 20px 60px;
   }
 
@@ -571,6 +588,7 @@ hr {
     color: black !important;
     font-weight: normal;
     font-size: 1.2em;
+    font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
   }
 
   .jumbotron {
@@ -623,7 +641,7 @@ hr {
   }
 
 
-  #template-content {
+  .main-content {
     padding: 0px 20px 20px 20px;
   }
 
