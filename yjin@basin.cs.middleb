@@ -1,0 +1,54 @@
+
+
+hr {
+  color: black;
+  height: 2px;
+}
+
+.navbar-brand {
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 30px 40px 40px 40px;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+/* Mobile Styles*/
+  .navbar-default {
+    background-color: white;
+    padding: 10px 5px 40px 5px;
+    border: none;
+  }
+}
+
+
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: black;
+}
+
+.selected {
+  color: black !important;
+  font-weight: bold;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+
+#about-photo {
+  padding: 40px 0px 40px 0px;
+}
+
+#about-name {
+  font-family: 'Zilla Slab', serif;
+  padding: 150px 20px 20px 20px;
+}
