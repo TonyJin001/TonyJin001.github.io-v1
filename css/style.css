@@ -220,20 +220,6 @@ iframe {
   transition: .5s;
 }
 
-/*.txtbox h3 {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-16.67%) translateY(30%);
-  color: #000;
-  font-family: 'Lato', sans-serif;
-  font-weight: normal;
-  text-align: center;
-  font-size: 1.5vw;
-}*/
 
 
 
@@ -264,6 +250,13 @@ iframe {
 .thumbnail-grid:after, .imgbox:before {
   content: '';
   display: table;
+}
+
+.thumbnail-grid h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: black;
+  padding-bottom: 20px;
 }
 
 
