@@ -275,11 +275,6 @@ iframe {
   font-weight: 700;
 }
 
-/*.gradient-text2 {
-  background: linear-gradient(to bottom right, #FF5B47, #FFC70A);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}*/
 
 
 
@@ -587,7 +582,7 @@ iframe {
   }
 
   .jumbotron {
-    background: url('../assets/test-bg-black.png') no-repeat center center;
+    background: url('../assets/portfolio-bg-black.png') no-repeat center center;
     background-size: cover;
     /*position: relative;*/
     height: 600px;
@@ -885,7 +880,7 @@ iframe {
   }
 
   .jumbotron {
-    background: url('../assets/test-bg-black.png') no-repeat center center;
+    background: url('../assets/portfolio-bg-black.png') no-repeat center center;
     background-size: cover;
     /*position: relative;*/
     height: 300px;
