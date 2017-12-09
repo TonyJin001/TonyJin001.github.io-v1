@@ -6,6 +6,9 @@
   /*url("./fonts/Harabara.otf") format("opentype"),*/
   url("../assets/fonts/carolina_mountains_personal_use-webfont.svg") format("svg");
 }
+body {
+  font-family: 'Lato', sans-serif;
+}
 
 hr {
   color: black;
@@ -257,6 +260,83 @@ iframe {
   font-weight: 300;
   color: black;
   padding-bottom: 20px;
+}
+
+.gradient-button1 {
+  border-color: white;
+  border-width: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom right, #A743CA, #6287D2);
+  color:white;
+  font-size: 1.3vw;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+.gradient-button1:hover {
+  border-color: white;
+  border-width: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom right, #A743CA, #6287D2);
+  color:white;
+  font-size: 1.3vw;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+}
+
+.gradient-button2 {
+  border-color: white;
+  border-width: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom right, #FF5B47, #FFC70A);
+  color:white;
+  font-size: 1.3vw;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+.gradient-button2:hover {
+  border-color: white;
+  border-width: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom right, #A743CA, #6287D2);
+  color:white;
+  font-size: 1.3vw;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+}
+
+.gradient-text {
+  background: linear-gradient(to bottom right, #A743CA, #6287D2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.gradient-text2 {
+  background: linear-gradient(to bottom right, #A743CA, #6287D2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
