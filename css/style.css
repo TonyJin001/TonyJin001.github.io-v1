@@ -101,10 +101,7 @@ hr {
   margin: 0px;
 }
 
-.subgroup-left-side {
-  padding-left: 0px;
-  padding-right: 50px;
-}
+
 
 .subgroup-right-side {
   padding-left: 0px;
@@ -519,6 +516,39 @@ hr {
     margin: 15px;
   }
 
+  .subgroup-left-side p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.25em;
+    margin-bottom: 25px;
+    line-height: 32px;
+  }
+
+  .subgroup-right-side p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1em;
+    margin-bottom: 25px;
+  }
+
+  .subgroup-left-side h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+  }
+
+  .subgroup-right-side h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+
+  .subgroup-left-side {
+    padding-left: 0px;
+    padding-right: 60px;
+  }
+
+
+
   /*#jumbo-bg {
       position: absolute;
       left: 0;
@@ -723,6 +753,39 @@ hr {
     display: inline-block;
     margin: 15px;
   }
+
+
+
+  .subgroup-left-side h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+  }
+
+  .subgroup-left-side p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.25em;
+    margin-bottom: 25px;
+    line-height: 25px;
+  }
+
+  .subgroup-right-side h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.6em;
+  }
+
+  .subgroup-right-side p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.25em;
+    margin-bottom: 25px;
+  }
+
+  .subgroup-left-side {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 /*
   #jumbo-bg {
       position: absolute;
@@ -783,18 +846,6 @@ hr {
     margin-bottom: 50px;
   }
 
-  .subgroup-left-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.25em;
-    margin-bottom: 25px;
-    line-height: 32px;
-  }
-
-  .subgroup-right-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.25em;
-    margin-bottom: 25px;
-  }
 
   /***********Template.HTML*****************/
 
@@ -826,18 +877,6 @@ hr {
     margin-bottom: 25px;
   }
 
-  .subgroup-left-side h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1.6em;
-    margin-bottom: 25px;
-  }
-
-  .subgroup-right-side h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1.6em;
-  }
 
 
   .footer p {
@@ -1059,6 +1098,24 @@ hr {
     font-size: 1.3em;
   }
 
+  .subgroup-left-side p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.15em;
+    margin-bottom: 25px;
+    line-height: 25px;
+  }
+
+  .subgroup-right-side p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.15em;
+    margin-bottom: 25px;
+  }
+
+  .subgroup-left-side {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .subgroup h5 {
     font-family: 'Source Serif Pro', serif;
     font-size: 1.2em;
@@ -1079,18 +1136,7 @@ hr {
     line-height: 25px;
     margin-bottom: 50px;
   }
-  .subgroup-left-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.15em;
-    margin-bottom: 25px;
-    line-height: 25px;
-  }
 
-  .subgroup-right-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.15em;
-    margin-bottom: 25px;
-  }
 
   .footer p {
     font-family: 'Lato', sans-serif;
@@ -1297,7 +1343,7 @@ h5 {
 
 .large-quote {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 90px;
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-size: 2.8em;
