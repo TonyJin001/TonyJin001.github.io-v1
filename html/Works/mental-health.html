@@ -74,12 +74,16 @@
                 <a href="#process">Process</a>
                 <ul class="nav nav-stacked">
                   <li><a href="#expert-interview">Expert Interview</a></li>
-                  <li><a href="#feedback">Class Feedback</a></li>
                   <li><a href="#comp-analysis">Competitive Analysis</a></li>
                   <li><a href="#lit-review">Literature Review</a></li>
                   <li><a href="#interviews">Interviews</a></li>
                   <li><a href="#persona">Persona</a></li>
                   <li><a href="#ideation">Ideation</a></li>
+                  <li><a href="#design-alts">Design Alternatives</a></li>
+                  <li><a href="#feedback">User Feedback</a></li>
+                  <li><a href="#info-arch">Information Architecture</a></li>
+                  <li><a href="#final-design">Final Design</a></li>
+                  <li><a href="#evaluation">Evaluation</a></li>
                 </ul>
               </li>
 
@@ -238,6 +242,8 @@
                   <li>There are also DIY breathing sensors created with Arduino. However, <strong></strong>most sensors use either data from microphones or from flexible bands to collect breathing pattern data.</li>
                 </ul>
 
+                <img class="img-responsive full-img"src="../../assets/up-sensors.png" alt="Sensors"> <br><br>
+
                 <h5>Presenting Breath Data:</h5>
                 <ul>
                   <li>Breathing data are most commonly visualized on <strong>screens</strong>. Visual presentation on screens can create <strong>an immersive experience</strong>, but it can also be <strong>distracting</strong>.</li>
@@ -253,12 +259,19 @@
 
               <div id="interviews" class="subgroup">
                 <h4>Interviews</h4>
-                <p><em><strong>This is ongoing work. Please check back for updates in a week or two.</strong> </em>
+                <p class="small-margin-bottom">To learn more about our target users, <strong>I took the lead to conduct several semi-structured interviews with Georgia Tech undergraduate and graduate students. Some of our main findings include:</strong>
                 </p>
+                <ul>
+                  <li><strong>School work and social life</strong> are the main sources of stress for most students.</li>
+                  <li>Most participants have heard of mindfulness and breathing exercises. However, <strong>none of them perform these activities regularly as a method for stress intervention</strong>.</li>
+                  <li><strong>Immersive experience</strong>, whether it’s playing competitive video games, reading, or listening to music, helps students forget about their stress and concentrate on what they enjoy at the moment.</li>
+                </ul>
+                <p>Our findings motivated us to design breathing interventions that are <strong>immersive</strong> and <strong>easy to learn</strong>. It also confirmed that <strong>motivating students to do breathing exercises together can be one effective way to relieve their stress</strong>, because most students have heard about breathing exercise and have positive associations with it.</p>
               </div>
 
               <div id="persona" class="subgroup">
                 <h4>Persona</h4>
+                <p>After summarizing and analyzing the interview results with my teammates, <strong>I took the lead to create the following personas to help us guide our design.</strong> </p>
                 <img class="img-responsive full-img"src="../../assets/up-persona-1.png" alt="Persona-1"> <br><br>
                 <img class="img-responsive full-img"src="../../assets/up-persona-2.png" alt="Persona-2"> <br><br>
               </div>
@@ -266,9 +279,147 @@
               <div id="ideation" class="subgroup">
                 <!-- needs: easy to put on... feedback.. -->
                 <h4>Ideation</h4>
-                <p>
+                <p>As a group, we conducted a design-studio-style workshop to brainstorm potential solutions. Group members were given <strong>two 10-minute sessions to sketch out as many ideas as possible</strong>. We then each presented our ideas, grouped similar ideas on the whiteboard, and offered critique to each other's ideas.
                 </p>
+                <img class="img-responsive full-img"src="../../assets/up-ideation.jpg" alt="ideation"><br><br>
+                <p>Here's a summary of the ideas generated. Ideas that are selected and combined into our final concepts are marked in red.</p>
               </div>
+          </section>
+        </div>
+
+        <img class="img-responsive large-img"src="../../assets/up-mind-map.jpg" alt="Mind map of ideas generated">
+
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content"> <br><br>
+          <section class="group">
+            <div id="design-alts" class="subgroup">
+              <h4>Design Alternatives</h4>
+              <p class="small-margin-bottom">Based on our user research data, we reviewed our ideas based on a few key criteria including:</p>
+              <ul>
+                <li><strong>Creativity:</strong> whether the idea is interesting/immersive enough to motivate students to perform the exercise</li>
+                <li><strong>Effectiveness: </strong>whether the solution can effectively bring the community together and help reduce students' stress</li>
+                <li><strong>Convenience:</strong> whether students can take a break to breathe when and where they need it</li>
+              </ul>
+              <p>We then came up with low-fidelity prototypes for our top three concepts.</p>
+              <h5>Concept 1</h5>
+              <p><strong>Concept 1 is a collective breathing exercise app that enables users to breathe with their friends or other students on campus.</strong> The purpose of this app is to teach users breathing techniques which can help relieve their stress, and to enhance a sense of togetherness by letting them breathe in similar rates/patterns with others. For this idea, users may be able to choose a belt type sensor or a microphone to measure their breathing patterns(in their smartphones). Click to view the <a href="https://projects.invisionapp.com/share/J2EH525HB#/screens">low-fidelity interactive wireframe</a>.</p>
+
+              <img class="img-responsive full-img"src="../../assets/up-concept-1.png" alt="Concept 1"><br><br>
+              <h5>Concept 2</h5>
+              <p>This is a collective, immersive experience that aims to let people (20 max) breathe together in a relaxing environment. Students are able to enter <strong>a pitch dark room</strong> and sit on futons, which have pressure sensors and can recognize when a student is sitting on it. After students put on their breathing sensor (belt) around their torso, <strong>they will be able to see their breaths visualized in wave form on a large display screen, which is mostly dark except for the breathing patterns</strong>.<br><br>
+
+              <strong>Students will hear relaxing sounds of ocean waves that serve as an audio cue</strong> to let them know when they should inhale and exhale. In addition, there will hear <strong>a soothing background music</strong>, which is composed of a progression of simple music chords. The chords will become richer and richer as more people sit down and start to breathe; <strong>each person will contribute to part of the chord, so that the experience becomes even more immersive and relaxing as more people join</strong>.<br><br>
+
+              In addition, we also hope to make this experience part of <strong>a fundraising process</strong>. We will let students know that when they breathe inside, they will be able to raise money for those in need of electricity. When they come out, they can see what they’ve contributed by breathing and relaxing themselves, which will motivate them to return and breathe more in the future.
+              </p>
+
+              <img class="img-responsive full-img"src="../../assets/up-concept-2.png" alt="Concept 2"><br><br>
+              <h5>Concept 3</h5>
+              <p>Our third concept is a mobile breathing game. <strong>Users are able to turn their sources of stress into a kite, and then breathe to fly the kite and "blow their stress away"</strong>. They can play the game with friends they know, or anonymous players on campus, using either a belt sensor or a microphone as input. After successfully completing each breathing session, users are rewarded with points based on their breathing quality, and <strong>can use the points to customize their kites</strong> Click to view the <a href="https://projects.invisionapp.com/share/9FEGZ2NJR#/screens/264031619_01onboarding1">low-fidelity interactive wireframe</a>.</p>
+
+              <img class="img-responsive full-img"src="../../assets/up-concept-3.png" alt="Concept 3"><br><br>
+
+            </div>
+
+            <div id="feedback" class="subgroup">
+              <h4>User Feedback</h4>
+              <p>We presented our 3 ideas to potential users at Georgia Tech and gathered both qualitative and quantitative feedback. For Concept 1 and 3, <strong>we let users interact with our interactive wireframes</strong>; for Concept 2, <strong>we walked users through our storyboard, played them a sample background music, and presented them with a sample visualization video</strong> so that they can get a feel of the immersive environment. Users were encouraged to <strong>think aloud</strong> during the process.</p>
+
+              <p>After presenting each idea, we asked users to rate how frequently they'd use the solution, how effective they think it would be, and how likely they would recommend the solution to a friend. We also asked their favorite/least favorite part of each solution, and to compare across three solutions. We created <strong>an affinity diagram</strong> based on the qualitative results we got.</p>
+
+              <img class="img-responsive full-img"src="../../assets/up-affinity.jpg" alt="Affinity Diagram"><br><br>
+
+              <p><strong>Users unanimously preferred Concept 2 and 3 over Concept 1</strong>. Some mentioned that Concept 1 is similar to Concept 3, but the latter is more engaging because of the gamification factor. <strong>Therefore, we focused our analysis on comparing Concept 2 and Concept 3</strong>. The user feedback is summarized below.</p>
+
+              <img class="img-responsive full-img"src="../../assets/up-pros-cons.png" alt="Pros and Cons of Concept 2 and 3"><br><br>
+
+              <p class="small-margin-bottom">Based on user feedback, we decided to modify and go ahead with <strong>Concept 3</strong> (Collective Breathing Game App) because:</p>
+
+              <ul>
+                <li>Almost every student owns a smartphone. <strong>Having an app on one's phone makes it more convenient to perform breathing exercises when needed</strong>.</li>
+                <li>The breathing visualization in the game is <strong>more concrete</strong> than in the pitch-dark room.</li>
+                <li>Prototyping and creating a mobile app is <strong>more feasible and less expensive</strong>; if we created one or several dark rooms for breathing intervention, GT has to provide the space for us.</li>
+              </ul>
+
+              <p class="small-margin-bottom">We also decided to <strong>make the following changes to Concept 3 to address some of its drawbacks</strong> identified through user feedback:</p>
+
+              <ul>
+                <li><strong>Remove competition</strong> and <strong>encourage collaboration</strong> in the game.</li>
+                <li><strong>Use a more intuitive metaphor other than a kite</strong> to represent breathing.</li>
+                <li>Enable users to <strong>select their stress source</strong> instead of assuming that exam is the main stress source for everyone.</li>
+              </ul>
+            </div>
+
+            <div id="info-arch" class="subgroup">
+              <h4>Information Architecture</h4>
+              <p class="small-margin-bottom">To address the issues raised by our users, we decided to make the following changes in our final design:</p>
+
+              <ul>
+                <li><strong>Change the animation from flying kites together to flying balloons</strong>, because the expansion and contraction of balloons is <strong>a more intuitive metaphor</strong> for breathing (exhaling and inhaling).</li>
+
+                <li>Attach all the users' balloons to the player's own stress source, <strong>giving the player a perception that his/her friends are helping him/her relieve his/her own stress</strong>, making the game collaborative, not competitive.</li>
+
+                <li>Encourage users to breathe together by <strong>giving them more game backgrounds to choose from </strong> and <strong> more reward points when more players join</strong>.</li>
+
+                <li><strong>Incorprate a calming background music</strong> to provide a more immersive gaming experience, a feature that users loved in Concept 2.</li>
+              </ul>
+
+              <p>We then created our final <strong>information architecture</strong>:</p>
+
+            </div>
+        </section>
+      </div>
+
+      <img class="img-responsive large-img"src="../../assets/up-info-arch.png" alt="Information Architecture">
+
+      <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content"> <br><br>
+        <section class="group">
+
+            <div id="final-design" class="subgroup">
+              <h4>Final Design</h4>
+
+              <p>The game involves an initial setup process, which creates a personalized experience for users to select a specific source of stress and a sensor to measure the input. After going through a simple tutorial, users will be able to select the gameplay mode to play with either peer support or just by themselves.</p>
+
+              <img class="img-responsive full-img"src="../../assets/up-design-1.png" alt="Final design"><br><br>
+
+              <p>We then provide options for users to play with either friends they are familiar with or others from the same school. In order to encourage users to use the multiplayer mode and gain peer support, we set the game mechanics to allow more customization for the background of the breathing scene available when more players are involved in the game. Then, users can immerse themselves in the game itself which has a nice nature background illustration and relaxing nature sound in the background. At the end of the game, the users will be rewarded based on how well the group did together. Finally, they can use the reward to customize their own balloons, an incentive designed to promote a prolonged engagement.</p>
+
+              <img class="img-responsive full-img"src="../../assets/up-design-2.png" alt="Final design"><br><br>
+
+              <!-- <div class="row"> -->
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-no-left-right-padding md-sm-xs-col-centered">
+                  <img class="img-responsive"src="../../assets/up-gif-onboarding.gif" alt="Onboarding animation"> <br>
+                  <p class="caption">The onboarding process enables users to select their stress source as well as the sensor they hope to use for the game.</p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-no-left-right-padding md-sm-xs-col-centered">
+                  <img class="img-responsive"src="../../assets/up-gif-tutorial.gif" alt="Tutorial animation"> <br>
+                  <p class="caption">The tutorial helps users learn how to correctly control the balloon through deep breathing.</p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-no-left-right-padding md-sm-xs-col-centered">
+                  <img class="img-responsive"src="../../assets/up-gif-onboarding.gif" alt="Onboarding animation"> <br>
+                  <p class="caption">The onboarding process enables users to select their stress source as well as the sensor they hope to use for the game.</p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-no-left-right-padding md-sm-xs-col-centered">
+                  <img class="img-responsive"src="../../assets/up-gif-tutorial.gif" alt="Tutorial animation"> <br>
+                  <p class="caption">The tutorial helps users learn how to correctly control the balloon through deep breathing.</p>
+                </div> -->
+
+
+              <!-- </div> -->
+
+
+
+
+
+            </div>
+
+            <div id="evaluation" class="subgroup">
+              <h4>Evaluation</h4>
+              <p><strong><em>This is ongoing work. Please check back for updates in a week or two.</em> </strong> </p>
+            </div>
+
           </section>
         </div>
       </div>

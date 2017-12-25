@@ -20,6 +20,11 @@ hr {
   margin-bottom: 40px;
 }
 
+.subgroup li {
+  margin-top: 8px;
+  margin-left: 32px;
+}
+
 
 
 
@@ -113,6 +118,8 @@ hr {
   height: 100%;
 }
 
+
+
 .full-screen-img {
   margin-left: -300vw;
   padding-left: 300vw;
@@ -120,9 +127,7 @@ hr {
   padding-right: 300vw;
 }
 
-.img-no-left-right-padding {
-  padding: 10px 0px 10px 0px;
-}
+
 
 /**********************Side bar for navigation in portfolio pieces*******************8*/
 .bs-docs-sidebar {
@@ -284,6 +289,13 @@ hr {
   transform: scale(1) !important;
 }
 
+.caption {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 1em !important;
+  line-height: 18px !important;
+  margin-bottom: 40px !important;
+}
+
 /*****Button Underline From Left *******/
 .hvr-underline-from-left {
   display: inline-block;
@@ -345,6 +357,7 @@ hr {
 .hvr-underline-from-left-white:hover:before, .hvr-underline-from-left-white:focus:before, .hvr-underline-from-left-white:active:before {
   right: 0;
 }
+
 
 /******************** different screen sizes **************************/
 /*Largest screen*/
@@ -559,6 +572,10 @@ hr {
     padding-left: 0px;
     padding-right: 60px;
   }
+
+  /*.img-no-left-right-padding {
+    padding: 10px 30px 10px 0px;
+  }*/
 
 
 
@@ -799,6 +816,16 @@ hr {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  /*.md-sm-xs-col-centered{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .img-no-left-right-padding {
+    padding: 10px 30px 10px 0px;
+    max-width: 364px;
+  }*/
 /*
   #jumbo-bg {
       position: absolute;
@@ -906,6 +933,8 @@ hr {
     display: block;
     text-align: center;
   }
+
+
 
 }
 
@@ -1223,6 +1252,16 @@ hr {
     width: 100%;
     height: 100%;
   }
+
+  /*.img-no-left-right-padding {
+    padding: 10px 0px 10px 0px;
+    max-width: 384px;
+  }
+
+  .md-sm-xs-col-centered{
+    float: none;
+    margin: 0 auto;
+  }*/
 
   /*.video-wrapper {
   	position: relative;
