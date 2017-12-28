@@ -301,6 +301,42 @@ hr {
   margin-bottom: 40px !important;
 }
 
+.black-button {
+  border-width: 2px;
+  border-radius: 0px;
+  border-color: #333;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 15px 30px;
+  background: transparent;
+  background-color: transparent;
+  color:#333;
+  font-size: 1.35em;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+  /* transition: .1s;
+  -webkit-transition: .1s; */
+}
+
+.black-button:hover {
+  border-width: 0px;
+  border-radius: 0px;
+  border-color: #333;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 17px 32px;
+  background: linear-gradient(to bottom right, #36d1dc, #5b86e5);
+  background-color: transparent;
+  color:white;
+  font-size: 1.35em;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+  /* transition: .1s;
+  -webkit-transition: .1s; */
+}
+
 /*****Button Underline From Left *******/
 .hvr-underline-from-left {
   display: inline-block;
@@ -462,6 +498,8 @@ hr {
     transition: .3s;
     -webkit-transition: .3s;
   }
+
+
 
   .white-button1 {
     border-width: 1px;
@@ -1407,10 +1445,10 @@ h5 {
   margin-top: 70px;
   padding-left: 40px;
   /* font-family: 'Lato', sans-serif; */
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Source Serif Pro', serif !important;
   /* font-style: italic; */
-  font-size: 2.5em;
-  font-weight: 400;
+  font-size: 2.5em !important;
+  font-weight: 400 !important;
   text-align: left;
 }
 
