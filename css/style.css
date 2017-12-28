@@ -25,6 +25,11 @@ hr {
   margin-left: 32px;
 }
 
+/* #my-role li {
+  margin-top: 0px;
+  margin-left: 0px;
+} */
+
 
 
 
@@ -1398,13 +1403,26 @@ h5 {
 }
 
 .large-quote {
-  padding-top: 70px;
-  padding-bottom: 90px;
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-  font-size: 2.8em;
+  border-left: 1.5px solid black;
+  margin-top: 70px;
+  padding-left: 40px;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Source Serif Pro', serif;
+  /* font-style: italic; */
+  font-size: 2.5em;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
+}
+
+.large-quote-attribution {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: right;
+  margin-top: 16px;
+  padding-right:16px;
+  margin-bottom: 90px;
+  color: #999;
 }
 
 .content-box p {
