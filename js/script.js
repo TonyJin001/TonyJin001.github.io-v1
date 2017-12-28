@@ -9,6 +9,9 @@ $(document).ready(function(){
     offset: 40
   });
 
+  $("img[class*=\"img-responsive\"]").each(function(index,element) {
+    $(element).wrap("<a href=\""+element.src+"\"><a>");
+  });
 
   $('#template-to-top').hide();
   //Check to see if the window is top if not then display button
