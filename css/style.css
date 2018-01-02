@@ -353,6 +353,22 @@ a[class="btn black-button"]:hover[name="REI button"] {
   font-family: 'lato' sans-serif !important;
 }
 
+a[class="btn black-button"]:hover[name="Up button"] {
+  border-width: 0px;
+  border-radius: 0px;
+  border-color: #333;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 17px 32px;
+  background: linear-gradient(to bottom right, #a7d9d9, #58ccd5);
+  background-color: transparent;
+  color:white;
+  font-size: 1.35em;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+}
+
 /*****Button Underline From Left *******/
 .hvr-underline-from-left {
   display: inline-block;
