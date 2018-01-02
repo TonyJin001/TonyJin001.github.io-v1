@@ -85,7 +85,8 @@
                   <li><a href="#user-feedback">User Feedback</a></li>
                   <li><a href="#wireframes">Wireframes</a></li>
                   <li><a href="#prototype">Prototype</a></li>
-                  <li><a href="#evaluation">Evaluation</a></li>
+                  <li><a href="#cog-walkthrough">Cognitive Walkthrough</a></li>
+                  <li><a href="#usability">Usability Testing</a></li>
                   <li><a href="#iterations">Iterations</a></li>
                 </ul>
               </li>
@@ -125,6 +126,10 @@
                   <p>Qualtrics, Sketch, InVision</p>
                   <br>
                   <br>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                  <p style="text-align:center;"><a href="#iterations" class="btn black-button" type="button" name="button">Jump to Final Design</button></a></p><br><br>
                 </div>
               </div>
 
@@ -397,15 +402,55 @@
             <section class="group">
 
 
-              <div id="evaluation" class="subgroup">
-                <h4>Evaluation</h4>
-                <p><em>Details coming soon.</em>
+              <div id="cog-walkthrough" class="subgroup">
+                <h4>Cognitive Walkthrough</h4>
+                <p class="small-margin-bottom">To evaluate the user flow of our app, we conducted several cognitive walkthrough sessions with usability experts. Our tool leads our users through a linear process to help them narrow down their choices. Though our process resembles REI salespersons' process in helping novice backpackers in store, <strong>we hope to make sure that the user flow, when translated into a digital survey, is intuitive and easy to follow</strong>. <br><br>
+
+                During each session, we first provide our usability experts with the context of our design and a backpack purchasing task to guide their evaluation. We then show them the interface and walk them through the tool step by step. During each step, we let them write down answers to all the following questions, together with explanations supporting the answers:
                 </p>
+                <ul>
+                  <li>Is this what you expected to see?</li>
+                  <li>Are you making progress towards your goal?</li>
+                  <li>What would your next action be?</li>
+                  <li>What do you expect to see next?</li>
+                </ul>
+
+                <p class="small-margin-bottom">Some of the feedback we got from usability experts include:</p>
+                <ul>
+                  <li><strong>This progress bar is not visible enough</strong>.</li>
+                  <li><strong>The "prev/next" buttons are not visible enough</strong>.</li>
+                  <li><strong>The users might not know that they are making progress towards the end goal until the last page</strong>, when they see the recommendations; they might give up halfway as a result.</li>
+                  <li><strong>The "Try-on for free" function on the recommendations page is not visible</strong>.</li>
+                </ul>
+              </div>
+
+              <div id="usability" class="subgroup">
+                <h4>Usability Testing</h4>
+                <p>Similar to our earlier user feedback sessions, we conducted several <strong>in-person, moderated usability testing sessions</strong> with potential users. After showiung users the current REI website and make sure that they are novice backpackers, we read them the following task:</p>
+
+                <p style="font-style:italic;text-align:center;padding-left:30px;padding-right:30px;">
+                  Find a backpack for a trip to Smoky Mountain for 5 days for yourself. You will be travelling with your significant other and carrying 1 tent, 2 sleeping bags, 2 sleeping mats, and 1 stove. Ask an expert for help along the way. Also, please share your thoughts and any questions you may have as you look for your backpack. Finally, we are not evaluating you, but rather seeking feedback to improve our solution.</p>
+
+                <p>Users then completed the task while <strong>thinking aloud</strong>. Following the task, we asked them whether they would use the tool in place of in-store shopping, and let them fill in the System Usability Scale (SUS).</p>
+
+                <p class="small-margin-bottom">Overall, our design received <strong>an average SUS score of 77</strong> (SD = 23.48). In fact, the mean was greatly affected by one outlier with an extremely low score; all the other users rated the system as highly usable. <strong>A larger sample size is needed to get a more accurate estimation of the system's usability, but a SUS score of 77 assures us that our system is considered usable by most of our audience</strong>.<br><br>
+
+                Other feedback/take-aways from the usability studies include:
+                </p>
+                <ul>
+                  <li><strong>The instruction videos on the Body Fit page were not noticed by a number of users</strong>.</li>
+                  <li><strong>The continuous scale for estimated weight/capacity confused a number of users</strong>.</li>
+                  <li><strong>Several users did not understand what "Your Backpack" meant</strong> on the Weight Estimation page.</li>
+                  <li>Instead of selecting a backpack as their final choice, <strong>users hope to either view details of backpacks they are interested in, or compare several backpacks</strong> on the Recommendations page.</li>
+                </ul>
               </div>
 
               <div id="iterations" class="subgroup">
                 <h4>Iterations</h4>
-                <p>Based on the results gather from cognitive walkthrough and usability testing sessions, <strong>I created the final design of our tool using Sketch.</strong> The design changes I made are illustrated below.
+
+                <p><em>Note: an interactive prototype of the final design will be available soon. The main UI screens can be found below.</em> <br><br>
+
+                Based on the results gather from cognitive walkthrough and usability testing sessions, <strong>I created the final design of our tool using Sketch.</strong> The design changes I made are illustrated below.
                 </p>
                 <h5>Landing Page</h5>
                 <p>On the landing page, I left only one entry point to the tool through the call-to-action button to minimize confusion. I also changed the icon for the voice interface we hope to provide for the visually impaired.</p>
@@ -419,7 +464,7 @@
             <section class="group">
               <div class="subgroup">
                 <h5>Trip Length</h5>
-                <p class="small-margin-bottom">For the trip length page, I changed the wording of the third button to make the meaning of the option clear. I also made the following changes to the general layout, which appear on all the following pages as well:</p>
+                <p class="small-margin-bottom">For the trip length page, I changed the wording of the third button to make the meaning of the option clear. I also made the following changes to the general layout, <strong>which appear on all the following pages as well</strong>:</p>
                 <ul>
                   <li>Placed the explanation on why the tool asks each question under the respective question. The original layout placed the explanation above the progress bar, which was hard to notice.</li>
                   <li>Changed the progress bar to make it clear which sections have been completed.</li>
@@ -437,7 +482,7 @@
             <section class="group">
               <div class="subgroup">
                 <h5>Body Fit</h5>
-                <p>Some users did not realize that the videos were playable. Therefore, I added more prominent titles for each video and made it clear that users can click to play the video instructions. I also added suggested filters earlier in the process (though without all the information it can be inaccurate) and changed the candidate backpacks once users finish answering one question to let them see the progress they make towards their goal.</p>
+                <p>Some users did not realize that the videos were playable. Therefore, <strong>I added more prominent titles for each video and made it clear that users can click to play the video instructions</strong>. I also added suggested filters earlier in the process (though without all the information it can be inaccurate) and changed the candidate backpacks once users finish answering one question to <strong>let them see the progress they make towards their goal</strong>.</p>
               </div>
             </section>
           </div>
@@ -451,10 +496,10 @@
                 <p class="small-margin-bottom">Changes to this section's design include:</p>
                 <ul>
                   <li>Changed the title of the section to better reflect what we are estimating (weight and capacity, not weight alone). </li>
-                  <li>Made it clear through description that the estimated weight is the total weight of the backpack with all the gears inside.</li>
-                  <li>Abandoned the continuous scale for weight estimation, which confused a lot of users. Replaced it with discrete categories.</li>
-                  <li>Changed each category's capacity range for them to be consistent with REI's filters.</li>
-                  <li>Enabled users to carry half a tent, which was not taken into consideration in our original design.</li>
+                  <li>Made it clear through description that <strong>the estimated weight is the total weight of the backpack with all the gears inside</strong>.</li>
+                  <li>Abandoned the continuous scale for weight estimation, which confused a lot of users. <strong>Replaced it with discrete categories</strong>.</li>
+                  <li>Changed each category's capacity range for them to be <strong>consistent with REI's filters</strong>.</li>
+                  <li><strong>Enabled users to carry half a tent</strong> and share the weight with others, which was not taken into consideration in our original design.</li>
                 </ul>
               </div>
             </section>
@@ -469,9 +514,9 @@
                 <p class="small-margin-bottom">Changes to this section's design include:</p>
                 <ul>
                   <li>Changed the ambiguous wording of the "Select" buttons to "Learn More".</li>
-                  <li>Enable users to directly select backpacks to compare on this page.</li>
-                  <li>Added a call-to-action button to let users notice their option to try out 3 backpacks at home and return 2 of them for free.</li>
-                  <li>Changed the "Why We Recommend" section for each backpack to make it easier to read and more realistic.</li>
+                  <li>Enable users to <strong>directly select backpacks to compare</strong> on this page.</li>
+                  <li>Added a call-to-action button to <strong>let users notice their option to try out 3 backpacks at home and return 2 of them for free</strong>.</li>
+                  <li>Changed the "Why We Recommend" section for each backpack to <strong>make it easier to read and more realistic</strong>.</li>
                 </ul>
               </div>
             </section>
