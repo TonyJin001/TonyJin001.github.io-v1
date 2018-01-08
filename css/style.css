@@ -30,6 +30,12 @@ hr {
   margin-left: 0px;
 } */
 
+.p-center-wrapper {
+  text-align: center;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 400;
+}
+
 
 
 
@@ -131,6 +137,8 @@ hr {
   margin-right: -300vw;
   padding-right: 300vw;
 }
+
+
 
 
 
@@ -312,7 +320,7 @@ hr {
   background: transparent;
   background-color: transparent;
   color:#333;
-  font-size: 1.35em;
+  font-size: 16px;
   font-weight: 400;
   font-family: 'lato' sans-serif !important;
   /* transition: .1s;
@@ -330,7 +338,7 @@ hr {
   background: linear-gradient(to bottom right, #36d1dc, #5b86e5);
   background-color: transparent;
   color:white;
-  font-size: 1.35em;
+  font-size: 16px;
   font-weight: 400;
   font-family: 'lato' sans-serif !important;
   /* transition: .1s;
@@ -348,7 +356,7 @@ a[class="btn black-button"]:hover[name="REI button"] {
   background: linear-gradient(to bottom right, #fc4a1a, #f7b733);
   background-color: transparent;
   color:white;
-  font-size: 1.35em;
+  font-size: 16px;
   font-weight: 400;
   font-family: 'lato' sans-serif !important;
 }
@@ -364,7 +372,7 @@ a[class="btn black-button"]:hover[name="Up button"] {
   background: linear-gradient(to bottom right, #a7d9d9, #58ccd5);
   background-color: transparent;
   color:white;
-  font-size: 1.35em;
+  font-size: 16px;
   font-weight: 400;
   font-family: 'lato' sans-serif !important;
 }
@@ -948,6 +956,13 @@ a[class="btn black-button"]:hover[name="Up button"] {
     font-size: 1.25em;
     line-height: 32px;
     margin-bottom: 40px;
+    color: #333333;
+    /* font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333333;
+    line-height: 32px;
+    margin-bottom: 40px; */
   }
 
   .subgroup ul {

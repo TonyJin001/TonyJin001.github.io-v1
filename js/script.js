@@ -45,6 +45,22 @@ $(document).ready(function(){
     $('.fade-in').addClass('load');
 
 
+    $("button[data-toggle='collapse']").click (function () {
+      $(this).text(function(i,old){
+        var currentString = old;
+        var newString = "";
+        if (old.startsWith("See")) {
+          newString = old.replace("See","Hide");
+        } else if (old.startsWith("Hide")){
+          newString = old.replace ("Hide","See");
+        } else {
+          console.log("error");
+        }
+        return newString;
+      });
+    })
+
+
 
 
     // let captions = document.getElementsByClassName('captions');
