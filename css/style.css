@@ -394,6 +394,38 @@ a[class="btn black-button"]:hover[name="Up button"] {
   font-family: 'lato' sans-serif !important;
 }
 
+button[class="btn black-button"]:hover[name="Up button"] {
+  border-width: 0px;
+  border-radius: 0px;
+  border-color: #3c3c3c;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 17px 32px;
+  background: linear-gradient(to bottom right, #a7d9d9, #58ccd5);
+  background-color: transparent;
+  color:white;
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+}
+
+button[class="btn black-button"]:hover[name="Up button"] {
+  border-width: 0px;
+  border-radius: 0px;
+  border-color: #3c3c3c;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 17px 32px;
+  background: linear-gradient(to bottom right, #a7d9d9, #58ccd5);
+  background-color: transparent;
+  color:white;
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: 'lato' sans-serif !important;
+}
+
 /*****Button Underline From Left *******/
 .hvr-underline-from-left {
   display: inline-block;
