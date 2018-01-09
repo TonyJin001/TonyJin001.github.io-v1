@@ -30,7 +30,7 @@
 
     <!-- Stylesheet -->
     <link rel = "stylesheet" type = "text/css" href = "../../css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Source+Serif+Pro:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Source+Serif+Pro:400,700|Roboto+Slab:300,400,700" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"> -->
     <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
     <script src="../../js/script.js" charset="utf-8"></script>
@@ -78,12 +78,19 @@
               </li>
 
               <li>
-                <a href="#process">Process</a>
+                <a href="#research">Research</a>
                 <ul class="nav nav-stacked">
                   <li><a href="#lit-review">Literature Review</a></li>
                   <li><a href="#comp-analysis">Competitive Analysis</a></li>
                   <li><a href="#surveys">Surveys</a></li>
                   <li><a href="#interviews">Interviews & Affinity Mapping</a></li>
+                  <li><a href="#key-takeaways">Key Takeaways</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#design">Design</a>
+                <ul class="nav nav-stacked">
                   <li><a href="#ideation">Ideation</a></li>
                   <li><a href="#design-alt">Design Alternatives</a></li>
                   <li><a href="#user-feedback">User Feedback & Design Implications</a></li>
@@ -91,7 +98,13 @@
                   <li><a href="#wireframes">Wireframes</a></li>
                   <li><a href="#final-design">Final Design & User Flow</a></li>
                   <li><a href="#prototype-small">Prototype</a></li>
-                  <li><a href="#evaluation">Evaluation</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#evaluate">Evaluate</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#usability">Usability Testing</a></li>
                   <li><a href="#design-iterations">Design Iterations</a></li>
                 </ul>
               </li>
@@ -121,6 +134,7 @@
           <section class="group"> -->
 
               <h3>Overview</h3>
+              <hr>
 
 
 
@@ -264,8 +278,9 @@
             </div>
           </div>
 
-          <section id="process" class="group">
-              <h3>Process</h3>
+          <section id="research" class="group">
+              <h3>Research</h3>
+              <hr>
               <div class="subgroup">
                   <p>We started the project having a vague idea that we hope to help young Americans learn more about personal finance. Initially, we hoped to help parents better educate their children about personal finance. <strong>However, we pivoted based on our primary and secondary research, and focused on helping emerging adults aged between 18 and 25 form better financial habits.</strong></p>
               </div>
@@ -277,16 +292,23 @@
               </div>
               <div id="comp-analysis" class="subgroup">
                   <h4>Competitive Analysis</h4>
-                  <p>We also investigated the existing solutions used by parents who consider it significant to educate their children about financial literacy. We analyzed three products including an interactive website and two highly ranked education apps from the iOS App Store/Google Play Store.
+
+                  <p class="small-margin-bottom">We analyzed the following financial education products for children and financial management products for the general population.
                   </p>
 
-                  <img class="img-responsive full-img" src="../../assets/logos.png" alt="logos"><br>
-                  <p class="small-margin-bottom">Through competitive analysis, we discovered that most of the existing products are either interactive but simple, which work fine only with younger children, or informative but static, which can hardly draw children's or teenagers' interests. <strong>Few products target late adolescents</strong>, who are not yet motivated to learn about complicated financial concepts, but will soon need them as they start working or enter college. <strong>Therefore, we decided to narrow our user group down to late adolescents</strong>.</p>
+                  <img class="img-responsive" src="../../assets/walker-comp-analysis-all.png" alt="competitive analysis"> <br><br><br>
+
+                  <p class="small-margin-bottom">We found that existing products fall into one of the following categories:</p>
+
+                  <img class="img-responsive full-img" src="../../assets/walker-comp-analysis-results.png" alt="existing products"><br>
+
+                  <p><strong>Few products target late adolescents</strong>, who are not yet motivated to learn about complicated financial concepts, but will soon need them as they start working or enter college. <strong>Therefore, we decided to narrow our user group down to late adolescents</strong>.</p>
 
                   <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#comp-analysis-details" class="btn black-button" name="button">See Detailed Analysis</button></p>
 
                   <div class="collapse" id="comp-analysis-details">
-                    <img class="img-responsive" src="../../assets/walker-comp-analysis-1.png" alt="competitive analysis"> <br><br>
+
+                    <img class="img-responsive full-img" src="../../assets/logos.png" alt="logos"><br><br>
                     <p>
                     <strong>Pennybox</strong>: The app enables children to complete chores and collect money from parents into their Pennybox account. Children can then track how much they have saved, spent, and how much more they can earn. Children can also request a cash out. The tool is great for younger children to learn about what it means to earn and save money through working; <strong>however, these concepts are too basic for teenagers who will soon need to manage a household and face real-world financial problems.</strong>
                     </p>
@@ -296,79 +318,109 @@
                     <p>
                     <strong>PiggyBot:</strong> The app introduces children to the concept that managing money should have three parts: spending, sharing with others, and saving. It lets children set goals and take photos of those goals; it then shows them weekly how they are doing in terms of reaching their goals. This app permits parents to set up profiles for multiple children and keep all the records in one place. <strong>However, like Pennybox, the app can be over-childish for teenagers and cannot be used to educate them about more complicated financial concepts.</strong>
                     </p>
+
                   </div>
 
               </div>
               <div id="surveys" class="subgroup">
                 <h4>Surveys</h4>
-                <p class="small-margin-bottom">Because of our limited timeframe, we decided to deploy a survey as the first step of our primary research, because it is the fastest way to get a wide range of responses. <strong>Based on the findings from the literature review, we chose parents of teenage children as our participants</strong>. We hoped to understand what financial concepts parents hope their children learn before leaving home, whether they have attempted to educate their children about these concepts, and whether the process has been successful. <br><br>
+                <p>Because of our limited timeframe, we decided to deploy a survey as the first step of our primary research, because it is the fastest way to get a wide range of responses. <strong>Based on the findings from the literature review, we chose parents of teenage children as our participants</strong>. We hoped to understand what financial concepts parents hope their children learn before leaving home, whether they have attempted to educate their children about these concepts, and whether the process has been successful.</p>
 
-                <img class="img-responsive full-img" src="../../assets/walker-survey.png" alt="Survey"> <br><br>
+                <img class="img-responsive full-img" src="../../assets/walker-survey.png" alt="Survey"> <br>
 
-                Our main findings from the surveys are as follows: (observations here regarding "children" apply to teenage children and young adults)</p>
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#survey-details" class="btn black-button" name="button">See Detailed Survey Results</button></p>
 
-                <ul>
-                  <li><strong>Budgeting</strong>, <strong>staying out of debt</strong>, and <strong>price vs. value</strong> (knowing the difference between the value and the price of something) are the top three concepts that parents want their children to learn before leaving home.</li>
+                <div class="collapse" id="survey-details">
+                  <p>Our main findings from the surveys are as follows: (observations here regarding "children" apply to teenage children and young adults)</p>
 
-                  <li>Managing one's own financial resources seems to be a <strong>distant topic</strong> for children before college.</li>
+                  <ul>
+                    <li><strong>Budgeting</strong>, <strong>staying out of debt</strong>, and <strong>price vs. value</strong> (knowing the difference between the value and the price of something) are the top three concepts that parents want their children to learn before leaving home.</li>
 
-                  <li>Children usually <strong>lack interests</strong> in learning about financial knowledge.</li>
+                    <li>Managing one's own financial resources seems to be a <strong>distant topic</strong> for children before college.</li>
 
-                  <li>Children in their early adolescence cannot understand certain personal finance knowledge.</li>
+                    <li>Children usually <strong>lack interests</strong> in learning about financial knowledge.</li>
 
-                  <li>Parents <strong>lack tools</strong> in educating their children about personal finance.</li>
-                </ul>
+                    <li>Children in their early adolescence cannot understand certain personal finance knowledge.</li>
 
-                <p class="small-margin-bottom">These results lead us to design tools that will:</p>
+                    <li>Parents <strong>lack tools</strong> in educating their children about personal finance.</li>
+                  </ul>
 
-                <ul>
-                  <li><strong>Motivate children to learn about concepts that parents believe are the most important</strong>: budgeting, staying out of debt, and price vs. value.</li>
-                  <li><strong>Bring distant financial concepts closer to children</strong> to stimulate their interests in personal finance.</li>
-                </ul>
+                  <p class="small-margin-bottom">These results lead us to design tools that will:</p>
+
+                  <ul>
+                    <li><strong>Motivate children to learn about concepts that parents believe are the most important</strong>: budgeting, staying out of debt, and price vs. value.</li>
+                    <li><strong>Bring distant financial concepts closer to children</strong> to stimulate their interests in personal finance.</li>
+                  </ul>
+                </div>
+
+
               </div>
 
               <div id="interviews" class="subgroup">
                 <h4>Interviews & Affinity Mapping</h4>
-                <p class="small-margin-bottom">We conducted several semi-structured interviews with <strong>parents</strong> and <strong>financial experts</strong> to dive deeper into the problems parents encounter when educating their children about personal finance and gain advice from experts.<br><br>
+                <p>We conducted several semi-structured interviews with <strong>parents</strong> and <strong>financial experts</strong> to dive deeper into the problems parents encounter when educating their children about personal finance and gain advice from experts.<br><br>
 
-                We created an affinity map as a group to identify themes from our qualitative interview data. <br><br>
+                We created an affinity map as a group to identify themes from our qualitative interview data.</p>
 
                   <img class="img-responsive full-img" src="../../assets/walker-affinity-all.jpg" alt="">
 
                 <br><br>
-                The main findings from the interviews include:
-                </p>
-                <ul>
-                  <li>Parents usually teach their children about personal finance through practical methods, like <strong>opening bank accounts for their children</strong> and <strong>letting them manage financial resources</strong>. These methods are considered effective. Some of the parents share financial knowledge during casual daily conversation too.</li>
 
-                  <li>Lots of parents mentioned that <strong>there is not enough tools for them to teach their children about personal finance</strong>.</li>
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#interview-details" class="btn black-button" name="button">See Detailed Interview Results</button></p>
 
-                  <li>Some parents consider themselves <strong>inadequate in financial literacy</strong> and thus cannot really educate their children effectively.</li>
-                </ul>
+                <div class="collapse" id="interview-details">
+                  <p class="small-margin-bottom">The main findings from the interviews include:
+                  </p>
+                  <ul>
+                    <li>Parents usually teach their children about personal finance through practical methods, like <strong>opening bank accounts for their children</strong> and <strong>letting them manage financial resources</strong>. These methods are considered effective. Some of the parents share financial knowledge during casual daily conversation too.</li>
 
-                <img class="img-responsive full-img"src="../../assets/walker-interview-notes.png" alt="interview notes"> <br><br>
-                <p class="small-margin-bottom">In addition, our interviews with financial experts gave us some <strong>new insights</strong> that we were not aware of before:</p>
+                    <li>Lots of parents mentioned that <strong>there is not enough tools for them to teach their children about personal finance</strong>.</li>
 
-                <ul>
-                  <li>Not only teenagers, <strong>but also adults in their early 20s</strong> do not typically know how to manage their own financial resources.</li>
+                    <li>Some parents consider themselves <strong>inadequate in financial literacy</strong> and thus cannot really educate their children effectively.</li>
+                  </ul>
 
-                  <li>Making a detailed budget plan and sticking to it (similar to a diet plan) is essential. <strong>However, most people, even adults, only have a vague idea about their financial own status</strong>.</li>
+                  <img class="img-responsive full-img"src="../../assets/walker-interview-notes.png" alt="interview notes"> <br><br>
+                  <p class="small-margin-bottom">In addition, our interviews with financial experts gave us some <strong>new insights</strong> that we were not aware of before:</p>
 
-                  <li>It is important to <strong>make distant financial concepts concrete</strong> for children in order for them to know their importance.</li>
+                  <ul>
+                    <li>Not only teenagers, <strong>but also adults in their early 20s</strong> do not typically know how to manage their own financial resources.</li>
 
-                  <li>Pre-college teenagers usually do not understand the importance of financial literacy when they are around their parents; once they enter college and start facing real-world financial decisions, they realize the importance of learning personal finance knowledge, but they no longer have enough chance/motivation to ask their parents about the topic.</li>
-                </ul>
+                    <li>Making a detailed budget plan and sticking to it (similar to a diet plan) is essential. <strong>However, most people, even adults, only have a vague idea about their financial own status</strong>.</li>
 
+                    <li>It is important to <strong>make distant financial concepts concrete</strong> for children in order for them to know their importance.</li>
+
+                    <li>Pre-college teenagers usually do not understand the importance of financial literacy when they are around their parents; once they enter college and start facing real-world financial decisions, they realize the importance of learning personal finance knowledge, but they no longer have enough chance/motivation to ask their parents about the topic.</li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div id="key-takeaways" class="subgroup">
+                <h4>Key Takeaways</h4>
                 <p>Based on the survey & interview results, we realized that <strong>both pre-college teenagers and emerging adults aged between 18 and 25 have the need to learn to better manage their financial resources.</strong> Since we cannot narrow down our user group based on our evidence, instead of arbitrarily deciding on a group to focus on, we delineated the different needs for pre-college teenagers and emerging adults, and brainstormed ideas for both.</p>
 
                 <img class="img-responsive full-img"src="../../assets/walker-takeaways.png" alt="take aways">
                 <br><br><br>
 
               </div>
+            </section>
+
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="design" class="group">
+              <h3>Design</h3>
+              <hr>
 
               <div id="ideation" class="subgroup">
                 <h4>Ideation</h4>
-
+                <p>Based on the evidence we collected from user research, we conducted an <strong>informed brainstorming session</strong>. Each member first came up with a variety of ideas individually. The group then convened for several hours to share all the ideas and form a number of new ideas.</p>
                 <br>
               </div>
             </section>
@@ -377,24 +429,25 @@
           <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content">
             <section class="group">
               <div class="subgroup">
+
                 <br><br>
-                <p class="small-margin-bottom">
-                  Based on the evidence we collected from user research, we conducted an <strong>informed brainstorming session</strong>. Each member first came up with a variety of ideas individually. The group then convened for several hours to share all the ideas and form a number of new ideas.<br><br>
 
-                  We followed a roundtable “yes and” collaborative ideation process, in which we added on each other’s ideas to push them further for more details. We also voiced potential difficulties for the ideas on the list so that we can either further develop them and produce possible solutions, or eliminate them because of their low feasibility. <br><br>
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#ideation-process" class="btn black-button" name="button">See Detailed Ideation Process</button></p>
 
-                  We then narrowed down our ideas by grouping similar ones into bigger themes. <strong>We also referred back to the main findings in our user research, to make sure that all the themes we identified can address at least one of the main concerns of our users.</strong> Eventually, we narrowed our ideas down to the following four large themes that address our users’ concerns from different perspectives. <strong>The first two concepts primarily address the need of emerging adults aged between 18 and 25, while the last two concepts target parents and their pre-college children.</strong>
-                </p> <br><br>
+                <div class="collapse" id="ideation-process">
+                  <p>
+                    We followed a roundtable “yes and” collaborative ideation process, in which we added on each other’s ideas to push them further for more details. We also voiced potential difficulties for the ideas on the list so that we can either further develop them and produce possible solutions, or eliminate them because of their low feasibility. <br><br>
+
+                    We then narrowed down our ideas by grouping similar ones into bigger themes. <strong>We also referred back to the main findings in our user research, to make sure that all the themes we identified can address at least one of the main concerns of our users.</strong>
+                  </p>
+                </div>
+                <p>Eventually, we narrowed our ideas down to the following four large themes that address our users’ concerns from different perspectives. <strong>The first two concepts primarily address the need of emerging adults aged between 18 and 25, while the last two concepts target parents and their pre-college children.</strong></p>
+
                 <img class="img-reponsive full-img" src="../../assets/walker-concepts2.png" alt="concepts">
-                <br>
-                <br><br><br>
-                <!-- <ul>
-                  <li>Using users' own evaluation to reinforce good purchasing behaviors</li>
-                  <li>Visualizing one's future financial conditions based on current budgeting trends, and making distant financial concepts more relevant now</li>
-                  <li>Providing a tool that encourages parents to co-plan a major expenditure with their children and discuss financial concepts during the process</li>
-                  <li>Giving children a sense of agency by letting them control some of the household's money; reward them when they make good spending decisions</li> -->
+                <br><br><br><br>
 
-                <!-- </ul> -->
+
+
               </div>
 
               <div id="design-alt" class="subgroup">
@@ -426,11 +479,18 @@
 
               <div id="user-feedback" class="subgroup">
                 <h4>User Feedback & Design Implications</h4>
-                <p>Of the 15 users we interviewed, most people preferred Concept 1 and Concept 2, which target emerging adults. For Concept 3 and Concept 4, participants believed that parents might not want to follow the instructions in the tool, and might want to carry out our supported tasks outside of our tool. Though the aim of these concepts is to provide a much-needed platform for parents to start conversations on personal finance with their children, most users cannot see it happening. <strong>Therefore, we decided to narrow our choices down to Concept 1 and Concept 2, and target emerging adults only.</strong></p>
 
-                <p>Several participants also pointed out that <strong>visualizing one's future financial conditions based on current saving/spending behaviors might not make sense for emerging adults</strong>. People between 18 and 25 are generally in the process of choosing a field of study or exploring career opportunities; it's usually unclear to them how their financial conditions might change depending on their careers changes.<strong>As a result, Concept 2 might not seem appealing to emerging adults.</strong></p>
+                <p class="small-margin-bottom">After gathering feedback from 15 users, <strong>we decided to proceed with Concept 1 as our core concept, and incorporate the short-term financial status analysis feature from Concept 2 into our final design</strong>.</p>
 
-                <p>However, participants did mention that having a short-term financial status analysis feature (with no long-term goal setting) is beneficial. Therefore, <strong>we decided to proceed with Concept 1 as our core concept, and incorporate the short-term financial status analysis feature from Concept 2 into our final design</strong>. We also derived several <strong>design implications</strong> from participants' feedback on Concept 1 and Concept 2. Here are some examples:</p>
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#concept-feedback-details" class="btn black-button" name="button">See Detailed User Feedback</button></p>
+
+                <div class="collapse" id="concept-feedback-details">
+                  <p>Most users preferred Concept 1 and Concept 2, which target emerging adults. For Concept 3 and Concept 4, participants believed that parents might not want to follow the instructions in the tool, and might want to carry out our supported tasks outside of our tool. Though the aim of these concepts is to provide a much-needed platform for parents to start conversations on personal finance with their children, most users cannot see it happening. <strong>Therefore, we decided to narrow our choices down to Concept 1 and Concept 2, and target emerging adults only.</strong></p>
+
+                  <p>Several participants also pointed out that <strong>visualizing one's future financial conditions based on current saving/spending behaviors might not make sense for emerging adults</strong>. People between 18 and 25 are generally in the process of choosing a field of study or exploring career opportunities; it's usually unclear to them how their financial conditions might change depending on their careers changes. <strong>As a result, Concept 2 might not seem appealing to emerging adults.</strong> However, participants did mention that having a short-term financial status analysis feature (with no long-term goal setting) is beneficial. Therefore, we incorporated the short-term financial status analysis feature into our final design.</p>
+                </div>
+
+                <p>We also derived several <strong>design implications</strong> from participants' feedback on Concept 1 and Concept 2. Here are some examples:</p>
 
                 <img class="img-responsive full-img"src="../../assets/walker-feedback-design.png" alt="Feedback and Design Implications"> <br><br>
               </div>
@@ -441,16 +501,11 @@
                 <img class="img-responsive full-img"src="../../assets/walker-IA-group.JPG" alt="IA Design Process"> <br><br>
 
                 <p>With the design implications, we brainstormed the information architecture of our application individually, before meeting as a group and coming up with the following information architecture design:</p>
-              </div>
-            </section>
-          </div>
 
-                <img class="img-responsive large-img"src="../../assets/walker-info-arch.png" alt="Wireframes"> <br><br><br>
-
-          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content">
-              <section class="group">
-              <div class="subgroup">
+                <img class="img-responsive full-img"src="../../assets/walker-info-arch.png" alt="Wireframes"> <br><br>
               </div>
+
+
 
               <div id="wireframes" class="subgroup">
                 <h4>Wireframes</h4>
@@ -470,9 +525,23 @@
                 <p class="hidden-lg hidden-md hidden-sm">If the embedded prototype doesn't show up normally on mobile devices, please view it <a  href="http://invis.io/7FEAWBZ23">here</a>.</p>
                 <iframe width="438" height="930" src="http://invis.io/7FEAWBZ23" frameborder="0" allowfullscreen></iframe>
               </div>
+            </section>
 
-              <div id="evaluation" class="subgroup">
-                <h4>Evaluation</h4>
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="evaluate" class="group">
+              <h3>Evaluate</h3>
+              <hr>
+
+              <div id="usability" class="subgroup">
+                <h4>Usability Testing</h4>
                 <p>The aims of our evaluation sessions are 1) to <strong>identify usability problems</strong> with our current design and 2) to <strong>assess the learnability</strong> of our application.<br><br>
 
                 To evaluate the usability of the system, we developed the following 4 tasks that cover all the main features we have in our application.</p>

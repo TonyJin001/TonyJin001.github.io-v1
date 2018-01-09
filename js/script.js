@@ -14,6 +14,7 @@ $(document).ready(function(){
   });
 
   $('#template-to-top').hide();
+  $(".bs-docs-sidebar").hide();
   //Check to see if the window is top if not then display button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
@@ -21,7 +22,17 @@ $(document).ready(function(){
     } else {
       $('#template-to-top').fadeOut();
     }
+
+    if ($(this).scrollTop() > 600) {
+        $(".bs-docs-sidebar:hidden").css('visibility','visible');
+        $(".bs-docs-sidebar:hidden").fadeIn('slow');
+    }
+    else {
+        $(".bs-docs-sidebar:visible").fadeOut("slow");
+    }
   });
+
+
 
   $('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
@@ -45,16 +56,15 @@ $(document).ready(function(){
     $('.fade-in').addClass('load');
 
 
-    $("button[data-toggle='collapse']").click (function () {
+    $(".p-center-wrapper button[data-toggle='collapse']").click (function () {
       $(this).text(function(i,old){
-        var currentString = old;
         var newString = "";
         if (old.startsWith("See")) {
           newString = old.replace("See","Hide");
         } else if (old.startsWith("Hide")){
           newString = old.replace ("Hide","See");
         } else {
-          console.log("error");
+          newString = old;
         }
         return newString;
       });

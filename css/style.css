@@ -10,6 +10,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+strong {
+  font-weight: 400;
+}
+
 hr {
   color: black;
   background-color: black;
@@ -18,6 +22,10 @@ hr {
   width: 40px;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.subgroup {
+  padding-bottom: 32px;
 }
 
 .subgroup li {
@@ -88,15 +96,15 @@ hr {
 
 .section-title h3 {
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 2em;
   padding-top: 10px;
 }
 
 .section-divider {
-  padding-top: 30px;
+  padding-top: 80px;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .dot1, .dot2 {
@@ -145,7 +153,7 @@ hr {
 /**********************Side bar for navigation in portfolio pieces*******************8*/
 .bs-docs-sidebar {
   padding-left: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 /* all links in sidebar*/
@@ -171,7 +179,7 @@ hr {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-    color: black;
+    color: #3c3c3c;
     text-decoration: none;
     font-weight: 400;
     background-color: transparent;
@@ -193,6 +201,15 @@ hr {
 .bs-docs-sidebar > ul {
     overflow-y: auto;
     height: 100%;
+}
+
+/* hide all (inactive) nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;
 }
 
 .footer p a {
@@ -319,8 +336,8 @@ hr {
   padding: 15px 30px;
   background: transparent;
   background-color: transparent;
-  color:#333;
-  font-size: 16px;
+  color:#3c3c3c;
+  font-size: 1.1em;
   font-weight: 400;
   font-family: 'lato' sans-serif !important;
   /* transition: .1s;
@@ -330,7 +347,7 @@ hr {
 .black-button:hover {
   border-width: 0px;
   border-radius: 0px;
-  border-color: #333;
+  border-color: #3c3c3c;
   margin-top: 10px;
   margin-left: 4px;
   margin-right: 10px;
@@ -338,7 +355,7 @@ hr {
   background: linear-gradient(to bottom right, #36d1dc, #5b86e5);
   background-color: transparent;
   color:white;
-  font-size: 16px;
+  font-size: 1.1em;
   font-weight: 400;
   font-family: 'lato' sans-serif !important;
   /* transition: .1s;
@@ -348,7 +365,7 @@ hr {
 a[class="btn black-button"]:hover[name="REI button"] {
   border-width: 0px;
   border-radius: 0px;
-  border-color: #333;
+  border-color: #3c3c3c;
   margin-top: 10px;
   margin-left: 4px;
   margin-right: 10px;
@@ -356,7 +373,7 @@ a[class="btn black-button"]:hover[name="REI button"] {
   background: linear-gradient(to bottom right, #fc4a1a, #f7b733);
   background-color: transparent;
   color:white;
-  font-size: 16px;
+  font-size: 1.1em;
   font-weight: 400;
   font-family: 'lato' sans-serif !important;
 }
@@ -364,7 +381,7 @@ a[class="btn black-button"]:hover[name="REI button"] {
 a[class="btn black-button"]:hover[name="Up button"] {
   border-width: 0px;
   border-radius: 0px;
-  border-color: #333;
+  border-color: #3c3c3c;
   margin-top: 10px;
   margin-left: 4px;
   margin-right: 10px;
@@ -372,7 +389,7 @@ a[class="btn black-button"]:hover[name="Up button"] {
   background: linear-gradient(to bottom right, #a7d9d9, #58ccd5);
   background-color: transparent;
   color:white;
-  font-size: 16px;
+  font-size: 1.1em;
   font-weight: 400;
   font-family: 'lato' sans-serif !important;
 }
@@ -458,21 +475,21 @@ a[class="btn black-button"]:hover[name="Up button"] {
   }
 
   .navbar-brand {
-    color: black !important;
+    color: #3c3c3c !important;
     font-weight: 300;
     font-size: 1.5em;
     font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
   }
 
   .navbar-default .navbar-nav>li>a {
-    color: black;
+    color: #3c3c3c;
     font-weight: 300;
     padding: 0px 0px 10px 0px;
     margin: 15px 15px 0px 15px;
   }
 
   .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: black;
+    color: #3c3c3c;
   }
 
   /*white navbar*/
@@ -626,28 +643,30 @@ a[class="btn black-button"]:hover[name="Up button"] {
   }
 
   .subgroup-left-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.25em;
-    margin-bottom: 25px;
-    line-height: 32px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 48px;
+    line-height: 28px;
   }
 
   .subgroup-right-side p {
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1em;
-    margin-bottom: 25px;
+    font-weight: 300;
+    margin-bottom: 32px;
   }
 
   .subgroup-left-side h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.6em;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 
   .subgroup-right-side h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.2em;
   }
 
@@ -693,21 +712,21 @@ a[class="btn black-button"]:hover[name="Up button"] {
   }
 
   .navbar-brand {
-    color: black !important;
+    color: #3c3c3c !important;
     font-weight: 400;
     font-size: 1.5em;
     font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
   }
 
   .navbar-default .navbar-nav>li>a {
-    color: black;
+    color: #3c3c3c;
     font-weight: 300;
     padding: 0px 0px 10px 0px;
     margin: 15px 15px 0px 15px;
   }
 
   .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: black;
+    color: #3c3c3c;
   }
 
 
@@ -843,7 +862,7 @@ a[class="btn black-button"]:hover[name="Up button"] {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: black;
+    background: #3c3c3c;
     height: 1px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -870,29 +889,31 @@ a[class="btn black-button"]:hover[name="Up button"] {
 
 
   .subgroup-left-side h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.6em;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 
   .subgroup-left-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.25em;
-    margin-bottom: 25px;
-    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 32px;
+    line-height: 24px;
   }
 
   .subgroup-right-side h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.6em;
   }
 
   .subgroup-right-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.25em;
-    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 32px;
   }
 
   .subgroup-left-side {
@@ -944,19 +965,20 @@ a[class="btn black-button"]:hover[name="Up button"] {
   }
 
   .subgroup h5 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 1.3em;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 32px;
     /* text-decoration: underline; */
   }
 
   .subgroup p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.25em;
-    line-height: 32px;
-    margin-bottom: 40px;
-    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 48px;
+    color: #3c3c3c;
     /* font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -966,19 +988,20 @@ a[class="btn black-button"]:hover[name="Up button"] {
   }
 
   .subgroup ul {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.25em;
-    line-height: 32px;
-    margin-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 48px;
   }
 
 
   /***********Template.HTML*****************/
 
   .article-title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-weight: 700;
-    font-size: 2.4em;
+    font-size: 2.8em;
     text-align: center;
   }
 
@@ -990,17 +1013,18 @@ a[class="btn black-button"]:hover[name="Up button"] {
   }
 
   .group h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 2.2em;
     margin-bottom: 25px;
+    text-align: center;
   }
 
   .subgroup h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.6em;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 
 
@@ -1042,10 +1066,19 @@ a[class="btn black-button"]:hover[name="Up button"] {
   }
 
   .navbar-brand {
-    color: black !important;
+    color: #3c3c3c !important;
     font-weight: normal;
     font-size: 1.2em;
     font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: #3c3c3c;
+    font-weight: 300;
+  }
+
+  .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #3c3c3c;
   }
 
   .jumbotron {
@@ -1185,7 +1218,7 @@ a[class="btn black-button"]:hover[name="Up button"] {
   /******Template.HTML******/
 
   .article-title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-weight: 700;
     font-size: 2.4em;
     text-align: center;
@@ -1194,50 +1227,53 @@ a[class="btn black-button"]:hover[name="Up button"] {
   .article-subtitle {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
   }
 
   .group h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.8em;
     margin-bottom: 25px;
+    text-align: center;
     /*color: #525564;*/
   }
 
   .subgroup h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.3em;
     margin-bottom: 25px;
     /*color: #525564;*/
   }
 
   .subgroup-left-side h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.3em;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 
   .subgroup-right-side h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
     font-size: 1.3em;
   }
 
   .subgroup-left-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.15em;
-    margin-bottom: 25px;
-    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 32px;
+    line-height: 24px;
   }
 
   .subgroup-right-side p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.15em;
-    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 32px;
   }
 
   .subgroup-left-side {
@@ -1246,24 +1282,26 @@ a[class="btn black-button"]:hover[name="Up button"] {
   }
 
   .subgroup h5 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 1.1em;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 32px;
     /* text-decoration: underline; */
   }
 
   .subgroup p {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.15em;
-    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 24px;
     margin-bottom: 40px;
   }
 
   .subgroup ul {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1.15em;
-    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 24px;
     margin-bottom: 50px;
   }
 
@@ -1458,12 +1496,14 @@ a[class="btn black-button"]:hover[name="Up button"] {
 .content-box {
   border-left: 1px solid #979797;
   margin-left: -28px;
+  margin-bottom: 24px;
   padding-left: 28px;
   padding-right: 20px;
 }
 
 .content-box-side {
   border-left: 1px solid #979797;
+  margin-bottom: 24px;
   padding-left: 28px;
   padding-right: 20px;
 }
@@ -1514,18 +1554,18 @@ h5 {
 
 .content-box p {
   font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 300;
 }
 
 .content-box-side p {
   font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 300;
 }
 
 .content-box-side .about-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 1.3em;
   font-weight: 400;
 }
