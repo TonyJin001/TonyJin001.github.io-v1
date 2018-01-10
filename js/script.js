@@ -15,6 +15,16 @@ $(document).ready(function(){
 
   $('#template-to-top').hide();
   $(".bs-docs-sidebar").hide();
+
+  function checkVisible(elm) {
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  }
+
+  var testPic = document.getElementById('test-pic');
+
+
   //Check to see if the window is top if not then display button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
@@ -23,14 +33,22 @@ $(document).ready(function(){
       $('#template-to-top').fadeOut();
     }
 
-    if ($(this).scrollTop() > 600) {
-        $(".bs-docs-sidebar:hidden").css('visibility','visible');
-        $(".bs-docs-sidebar:hidden").fadeIn('slow');
-    }
-    else {
-        $(".bs-docs-sidebar:visible").fadeOut("slow");
-    }
+    // if ($(this).scrollTop() > 600) {
+    //     // $(".bs-docs-sidebar:hidden").css('visibility','visible');
+    //     $(".bs-docs-sidebar").fadeIn('slow');
+    // }
+    // else {
+    //     $(".bs-docs-sidebar").fadeOut("slow");
+    // }
   });
+
+  window.onscroll = function() {
+    if (checkVisible(testPic)) {
+      $(".bs-docs-sidebar").fadeOut("slow");
+    } else {
+      $(".bs-docs-sidebar").fadeIn('slow');
+    }
+  }
 
 
 
