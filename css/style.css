@@ -140,10 +140,7 @@ hr {
 
 
 .full-screen-img {
-  margin-left: -300vw;
-  padding-left: 300vw;
-  margin-right: -300vw;
-  padding-right: 300vw;
+  width: 100%;
 }
 
 

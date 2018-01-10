@@ -22,17 +22,8 @@ $(document).ready(function(){
     return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
   }
 
-  var testPic = "";
 
-  try {
-    testPic = document.getElementById('test-pic');
-  }
-  catch(err) {
-    // testPic = null;
-  }
-
-
-
+  var allLargeImgs = document.getElementsByClassName('full-screen-img');
 
   //Check to see if the window is top if not then display button
   $(window).scroll(function () {
@@ -43,20 +34,21 @@ $(document).ready(function(){
     }
 
     if ($(this).scrollTop() > 600) {
-        // $(".bs-docs-sidebar:hidden").css('visibility','visible');
-        console.log(testPic);
-        if (testPic != "" && testPic != null) {
-          console.log("###########not null");
-          if (!checkVisible(testPic)) {
-            $(".bs-docs-sidebar").fadeIn('slow');
-            console.log("@@@@@@@@@@fadein");
-          } else {
-            $(".bs-docs-sidebar").fadeOut('slow');
-            console.log("$$$$$$$$$$$$fadeout");
+
+      var hasLargeImg = false;
+
+      Array.prototype.forEach.call(allLargeImgs, function(el) {
+          console.log(el);
+          if (checkVisible(el)) {
+            hasLargeImg = true;
           }
-        } else {
-          $(".bs-docs-sidebar").fadeIn('slow');
-        }
+      });
+
+      if (hasLargeImg) {
+        $(".bs-docs-sidebar").fadeOut('slow');
+      } else {
+        $(".bs-docs-sidebar").fadeIn('slow');
+      }
     }
     else {
         $(".bs-docs-sidebar").fadeOut("slow");
@@ -68,10 +60,6 @@ $(document).ready(function(){
     //   $(".bs-docs-sidebar").fadeIn('slow');
     // }
   });
-
-  window.onscroll = function() {
-
-  }
 
 
 
