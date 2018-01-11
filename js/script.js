@@ -10,7 +10,10 @@ $(document).ready(function(){
   });
 
   $("img[class*=\"img-responsive\"]").each(function(index,element) {
-    $(element).wrap("<a href=\""+element.src+"\"><a>");
+    console.log($(element).attr('class'));
+    if ($(element).attr('class')!= 'img-responsive full-screen-img') {
+      $(element).attr("data-action","zoom");
+    }
   });
 
   $('#template-to-top').hide();
@@ -38,14 +41,14 @@ $(document).ready(function(){
       var hasLargeImg = false;
 
       Array.prototype.forEach.call(allLargeImgs, function(el) {
-          console.log(el);
+          // console.log(el);
           if (checkVisible(el)) {
             hasLargeImg = true;
           }
       });
 
       if (hasLargeImg) {
-        $(".bs-docs-sidebar").fadeOut('slow');
+        // $(".bs-docs-sidebar").fadeOut('slow');
       } else {
         $(".bs-docs-sidebar").fadeIn('slow');
       }
