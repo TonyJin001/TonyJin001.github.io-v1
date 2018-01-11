@@ -48,7 +48,7 @@ $(document).ready(function(){
       });
 
       if (hasLargeImg) {
-        // $(".bs-docs-sidebar").fadeOut('slow');
+        $(".bs-docs-sidebar").fadeOut('slow');
       } else {
         $(".bs-docs-sidebar").fadeIn('slow');
       }
