@@ -1084,6 +1084,11 @@ button[class="btn black-button"]:hover[name="Up button"] {
 
 /*Mobile screen*/
 @media only screen and (max-width: 767px) {
+
+  .xs-hidden-manual {
+    display:none;
+  }
+
   .navbar-default {
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
