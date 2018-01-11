@@ -1227,6 +1227,7 @@ button[class="btn black-button"]:hover[name="Up button"] {
     width: 100%;
     transform: scale(1.5);
     margin: 150px 0px;
+    overflow:hidden;
   }
 
   .portfolio-row {
