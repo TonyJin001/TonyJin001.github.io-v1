@@ -555,7 +555,7 @@ button[class="btn black-button"]:hover[name="Up button"] {
     background: url('../assets/portfolio-bg-black.png') no-repeat center center;
     background-size: cover;
     /*position: relative;*/
-    height: 650px;
+    height: 87vh;
     color: black;
 
     overflow: hidden;
