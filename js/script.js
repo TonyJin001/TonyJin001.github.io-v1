@@ -69,7 +69,7 @@ $(document).ready(function(){
 
     if (mq.matches) {
       console.log("matches largest screen");
-      if (window.location.href === '/html/Portfolio.html'){
+      if (window.location.pathname === '/html/Portfolio.html'){
         if ($(this).scrollTop() > ($(window).height()*0.87-65)) {
           $('.navbar-nav-white').removeClass('navbar-nav-white');
           $('.navbar-brand-white').removeClass('navbar-brand-white');
