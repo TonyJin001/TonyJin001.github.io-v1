@@ -65,11 +65,10 @@ $(document).ready(function(){
     //   $(".bs-docs-sidebar").fadeIn('slow');
     // }
 
-    console.log(window.location.pathname);
 
     if (mq.matches) {
-      console.log("matches largest screen");
       if (window.location.pathname === '/html/Portfolio.html'){
+        console.log('yes');
         if ($(this).scrollTop() > ($(window).height()*0.87-65)) {
           $('.navbar-nav-white').removeClass('navbar-nav-white');
           $('.navbar-brand-white').removeClass('navbar-brand-white');
